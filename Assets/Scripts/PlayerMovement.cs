@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D rb2d;
     bool jump = true;
     float playerSpeed = 1000;
-    float playerJump = 500;
+    float playerJump = 1000;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,7 +34,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Danger")
+        if (collision.gameObject.tag == "Slope")
         {
 
         }
