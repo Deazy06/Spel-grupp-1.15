@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerHealth : MonoBehaviour
 {
-    int hp = 3;
+    public int hp = 3;
     SpriteRenderer sprite;
     List<Color> colorchoose;
     // Start is called before the first frame update
@@ -28,7 +28,7 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag == "Danger")
         {
             print("aj");
-            hp =-1;
+            hp -= 1;
             sprite.color = colorchoose[0 + 1];
         }
     }
