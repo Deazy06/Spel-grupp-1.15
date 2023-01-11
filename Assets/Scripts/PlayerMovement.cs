@@ -43,4 +43,9 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
         }
     }
+
+    public void PlayerDeath()
+    {
+        
+    }
 }

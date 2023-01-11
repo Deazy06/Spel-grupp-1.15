@@ -12,15 +12,18 @@ public class PlayerHealth : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
         colorchoose = new List<Color>();
-        colorchoose.Add(Color.grey);
-        colorchoose.Add(Color.red);
-        colorchoose.Add(Color.black);
+        colorchoose.Add (new Color(1,0,0,0));
+        colorchoose.Add (new Color(1,0,0,1));
+        colorchoose.Add (new Color(1,0,0,1));
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (hp <= 0)
+        {
+            GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -29,7 +32,7 @@ public class PlayerHealth : MonoBehaviour
         {
             print("aj");
             hp -= 1;
-            sprite.color = colorchoose[0 + 1];
+            sprite.color = colorchoose[hp];
         }
     }
 }
