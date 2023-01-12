@@ -8,6 +8,8 @@ public class PlayerHealth : MonoBehaviour
     SpriteRenderer sprite;
     List<Color> colorchoose;
     float regain = 0;
+    [SerializeField] float timer = 0;
+    int respawnPoint = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +41,10 @@ public class PlayerHealth : MonoBehaviour
         if (hp <= 0)
         {
             GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                PlayerRespawn();
+            }
         }
     }
 
@@ -50,5 +56,18 @@ public class PlayerHealth : MonoBehaviour
             hp -= 1;
             sprite.color = colorchoose[hp];
         }
+        if (collision.gameObject.tag == "Respawn")
+        {
+            Destroy(collision.gameObject);
+            respawnPoint += 1;
+        }
+    }
+    private void PlayerRespawn()
+    {
+        hp = 3;
+        transform.position = new Vector3(0, 0, 0);
+        GameObject.Find("CheckPoint" + respawnPoint).GetComponent<PlayerMovement>().enabled = false;
+        GetComponent<PlayerMovement>().enabled = true;
+        sprite.color = colorchoose[hp];
     }
 }
