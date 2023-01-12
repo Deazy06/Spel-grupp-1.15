@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Danger
   - Climb
+  - Slope
   layers:
   - Default
   - TransparentFX
