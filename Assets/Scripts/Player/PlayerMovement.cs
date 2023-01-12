@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         
         if (climb == true && Input.GetKey(KeyCode.W))
         {
-            transform.position += new Vector3(0, 0.001f, 0);
+            transform.position += new Vector3(0, 3, 0) * Time.deltaTime;
             rb2d.AddForce(Vector3.up * playerJump * 0.008f);
         }
     }

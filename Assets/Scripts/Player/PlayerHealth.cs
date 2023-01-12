@@ -9,10 +9,12 @@ public class PlayerHealth : MonoBehaviour
     List<Color> colorchoose;
     float regain = 0;
     [SerializeField] float timer = 0;
-    int respawnPoint = 0;
+    Vector3 respawnPoint;
     // Start is called before the first frame update
     void Start()
     {
+        respawnPoint = transform.position;
+
         sprite = GetComponent<SpriteRenderer>();
         colorchoose = new List<Color>();
         colorchoose.Add(new Color(0, 0, 0, 1));
@@ -56,17 +58,20 @@ public class PlayerHealth : MonoBehaviour
             hp -= 1;
             sprite.color = colorchoose[hp];
         }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
         if (collision.gameObject.tag == "Respawn")
         {
-            Destroy(collision.gameObject);
-            respawnPoint += 1;
+            respawnPoint = transform.position;
+            print("Set Spawnpoint");
         }
     }
     private void PlayerRespawn()
     {
         hp = 3;
         transform.position = new Vector3(0, 0, 0);
-        GameObject.Find("CheckPoint" + respawnPoint).GetComponent<PlayerMovement>().enabled = false;
+        transform.position = respawnPoint;
         GetComponent<PlayerMovement>().enabled = true;
         sprite.color = colorchoose[hp];
     }
