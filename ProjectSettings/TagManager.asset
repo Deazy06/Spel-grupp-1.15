@@ -6,17 +6,18 @@ TagManager:
   tags:
   - Danger
   - Climb
+  - Close
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Stone
+  - Player
   - Water
   - UI
   - Ground
+  - Close Door
+  - Open Door
   - Door
-  - No Door
-  - 
   - 
   - 
   - 
