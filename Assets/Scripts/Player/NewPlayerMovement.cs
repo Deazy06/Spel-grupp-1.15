@@ -35,7 +35,7 @@ public class NewPlayerMovement : MonoBehaviour
             animation.SetTrigger("NotWalking");
         }
 
-        Flip();
+        Flip(); // fixa ny script för flip för att drag pull gubben ska inte vända sig
 
     }
 
