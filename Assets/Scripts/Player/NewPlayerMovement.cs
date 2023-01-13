@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class NewPlayerMovement : MonoBehaviour
 {
+    private Animator animation;
+
     private float horizontal;
-    private float speed = 4f;
+    private float speed = 3f;
     private float jumpingPower = 7f;
     private bool isFacingRight = true;
 
@@ -11,6 +13,10 @@ public class NewPlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    private void Start()
+    {
+        animation = GetComponent<Animator>();
+    }
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -20,11 +26,21 @@ public class NewPlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
 
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
+        {
+            animation.SetTrigger("Walking");
+        }
+        if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
+        {
+            animation.SetTrigger("NotWalking");
+        }
 
         Flip();
+
     }
 
-    private void FixedUpdate()
+
+private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
