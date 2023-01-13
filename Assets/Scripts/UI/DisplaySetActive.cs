@@ -1,14 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 
-public class MenuSetActive : MonoBehaviour
+public class DisplaySetActive : MonoBehaviour
 {
-    public void OpenMenu()  
+ public void OpenDisplay()
     {
         gameObject.SetActive(true);
     }
-    public void CloseMenu()
+    public void CloseDisplay()
     {
         gameObject.SetActive(false);
     }
