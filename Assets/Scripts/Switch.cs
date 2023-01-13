@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
-    [SerializeField] bool active = false;
     SpriteRenderer sprite;
     Collider2D collide;
     // Start is called before the first frame update
@@ -30,15 +29,13 @@ public class Switch : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && active == false)
+        if (collision.gameObject.tag == "Player" && gameObject.tag == "Inactive")
         {
-            active = true;
             sprite.color = Color.green;
             gameObject.tag = "Active";
         }
         else
         {
-            active = false;
             sprite.color = Color.red;
             gameObject.tag = "Inactive";
         }

@@ -6,7 +6,15 @@ using UnityEngine;
 public class DoorTriggerButton : MonoBehaviour
 {
     [SerializeField] private DoorSetActive door;
-    [SerializeField] GameObject chooseTrigger;
+    [SerializeField] GameObject chooseTrigger1;
+    [SerializeField] GameObject chooseTrigger2;
+    [SerializeField] GameObject chooseTrigger3;
+
+    private void Start()
+    {
+        
+        
+    }
 
     private void Update()
     {
@@ -14,14 +22,18 @@ public class DoorTriggerButton : MonoBehaviour
        {
             door.OpenDoor();
        }
-       if (chooseTrigger.tag == "Active")
+       if (chooseTrigger1.tag == "Active"&& chooseTrigger2.tag == "Active"&& chooseTrigger3.tag == "Active")
        {
             door.OpenDoor();
+       }
+       else
+       {
+            door.CloseDoor();
        }
     }
     private void OnTriggerEnter2D(Collider2D collision2d)
     {
-        chooseTrigger.tag = "Inactive";
+        chooseTrigger1.tag = "Inactive";
         door.CloseDoor();
         
     }
