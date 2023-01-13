@@ -26,6 +26,10 @@ public class DoorTriggerButton : MonoBehaviour
        {
             door.OpenDoor();
        }
+       else
+       {
+            door.CloseDoor();
+       }
     }
     private void OnTriggerEnter2D(Collider2D collision2d)
     {
