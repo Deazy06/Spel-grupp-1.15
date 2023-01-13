@@ -221,7 +221,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   smoothTime: 0.2
+  yPostion: 1
   target: {fileID: 1528241587}
+  groundCheck: {fileID: 786813941}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  X: 0
+  Y: 0
+  Z: 0
+  XOffset: 0
+  YOffset: 5
+  ZOffset: 0
 --- !u!1 &786813940
 GameObject:
   m_ObjectHideFlags: 0
