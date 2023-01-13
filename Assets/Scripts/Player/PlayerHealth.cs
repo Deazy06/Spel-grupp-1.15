@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
         {
             regain += 0.5f * Time.deltaTime;
             print("regain");
-            if (regain >= 1)
+            if (regain >= 2)
             {
                 regain = 0;
                 hp += 1;
