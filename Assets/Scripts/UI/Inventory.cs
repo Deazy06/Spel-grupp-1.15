@@ -25,11 +25,14 @@ public class Inventory : MonoBehaviour // Diyor made this lol
             shopMenuUI.SetActive(true);
 
             this.toggle += 1;
+
+            PauseGame();
         }
 
         if (toggle == 3)
         {
             shopMenuUI.SetActive(false);
+            ResumeGame();
         }
 
         if (toggle == 4)
@@ -37,6 +40,16 @@ public class Inventory : MonoBehaviour // Diyor made this lol
             this.toggle = 1;
         }
 
+
+
+        void PauseGame()
+        {
+            Time.timeScale = 0;
+        }
+        void ResumeGame()
+        {
+            Time.timeScale = 1;
+        }
 
     }
 }
