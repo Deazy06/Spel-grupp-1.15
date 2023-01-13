@@ -8,7 +8,6 @@ public class PlayerHealth : MonoBehaviour
     SpriteRenderer sprite;
     List<Color> colorchoose;
     float regain = 0;
-    [SerializeField] float timer = 0;
     Vector3 respawnPoint;
     // Start is called before the first frame update
     void Start()
