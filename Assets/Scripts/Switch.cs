@@ -34,11 +34,13 @@ public class Switch : MonoBehaviour
         {
             active = true;
             sprite.color = Color.green;
+            gameObject.tag = "Active";
         }
         else
         {
             active = false;
             sprite.color = Color.red;
+            gameObject.tag = "Inactive";
         }
     }
 }
