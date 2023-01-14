@@ -14,6 +14,8 @@ public class MenuManager : MonoBehaviour
 
         FindObjectOfType<AudioManager>().FadeOutAudio(this);
 
+        FindObjectOfType<FadeInImage>().FadeIn(this);
+
     }
     public void QuitGame()
     {
