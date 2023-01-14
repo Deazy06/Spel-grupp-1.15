@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    [SerializeField] private CanvasGroup MainMenu;
 
     private Animator animation;
     public void StartGame()
@@ -20,10 +19,17 @@ public class MenuManager : MonoBehaviour
 
     }
 
-    public void TurnOffUI()
+    public void TurnOffUI() // Credit
     {
         StartCoroutine(waiter2());
+        FindObjectOfType<Credits>().CreditFadeIn(this);
     }
+    public void TurnOnUI() // Credit
+    {
+        StartCoroutine(waiter3());
+        FindObjectOfType<Credits>().CreditFadeOut(this);
+    }
+
 
     public void QuitGame()
     {
@@ -31,7 +37,7 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
-    IEnumerator waiter()
+    IEnumerator waiter() // PLay
     {
 
         //Wait for 4 seconds
@@ -39,12 +45,18 @@ public class MenuManager : MonoBehaviour
         SceneManager.LoadScene("Diyor");
         
     }
-
     IEnumerator waiter2()
     {
-
+        
         yield return new WaitForSeconds(1.1f);
         FindObjectOfType<MainMenu>().Fade(this);
+        StopCoroutine(waiter2());
+    }
+    IEnumerator waiter3()
+    {
+        FindObjectOfType<MainMenu>().FadeIn(this);
+        yield return new WaitForSeconds(1f);
+        StopCoroutine(waiter3());
 
     }
 }

@@ -1,18 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class Credits : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public Vector3 targetPosition;
+    public GameObject targetObject;
+    private Animator animation;
     void Start()
     {
-        gameObject.SetActive(false);
+        animation = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
-    void Update()
+
+    public void CreditFadeIn(MenuManager menuManager)
     {
-        
+        targetObject.GetComponent<RectTransform>().localPosition = Vector3.zero;
+
+        animation.SetTrigger("CreditFadeIn");
+    }
+    public void CreditFadeOut(MenuManager menuManager)
+    {
+        // targetObject.GetComponent<RectTransform>().localPosition = targetPosition;
+
+        animation.SetTrigger("CreditFadeOut");
     }
 }

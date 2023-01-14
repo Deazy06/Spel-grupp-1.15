@@ -9,7 +9,10 @@ public class FadeInUI : MonoBehaviour
 
     [SerializeField] public bool fadeIn = false;
     [SerializeField] public bool fadeOut = false;
+    [SerializeField] public bool fadeInFaster = false;
     [SerializeField] public bool fadeOutFaster = false;
+    [SerializeField] public bool fadeInDelayed = false;
+
 
     public void FadeOut(MenuManager menuManager)
     {
@@ -21,17 +24,36 @@ public class FadeInUI : MonoBehaviour
         fadeOutFaster = true;
     }
 
+    public void FadeInFaster()
+    {
+        fadeInFaster = true;
+    }
+    public void FadeInDelayed()
+    {
+        StartCoroutine(waiter());
+    }
+    IEnumerator waiter()
+    {
+        yield return new WaitForSeconds(1f);
+        fadeInDelayed = true;
+
+    }
+    public void FadeIn()
+    {
+        fadeIn = true;
+    }
+
     public void Start()
     {
         myUIGroup.alpha = 0f;
         fadeIn = true;
-        
+
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        if (fadeIn)
+        if (fadeIn || fadeInDelayed)
         {
             if (myUIGroup.alpha < 1)
             {
@@ -60,11 +82,23 @@ public class FadeInUI : MonoBehaviour
                 myUIGroup.alpha -= Time.deltaTime;
                 if (myUIGroup.alpha == 0)
                 {
-                    fadeOut = false;
+                    fadeOutFaster = false;
                 }
             }
         }
-    }
+        if (fadeInFaster)
+        {
+            if (myUIGroup.alpha < 1)
+            {
+                myUIGroup.alpha += Time.deltaTime;
+                if (myUIGroup.alpha >= 1)
+                {
+                    fadeInFaster = false;
+                }
 
-    
+            }
+
+
+        }
+    }
 }
