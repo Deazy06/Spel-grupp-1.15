@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MainMenu : MonoBehaviour
 {
+    
     public GameObject targetObject;
     public void Fade(MenuManager menuManager)
     {
@@ -14,7 +15,6 @@ public class MainMenu : MonoBehaviour
     {
         targetObject.SetActive(true);
         targetObject.GetComponent<Renderer>().enabled = true;
-
     }
 
 }
