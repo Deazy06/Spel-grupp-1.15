@@ -8,6 +8,12 @@ public class FadeInUI : MonoBehaviour
     [SerializeField] private CanvasGroup myUIGroup;
 
     [SerializeField] private bool fadeIn = false;
+    [SerializeField] public bool fadeOut = false;
+
+    public void FadeOut(MenuManager menuManager)
+    {
+        fadeOut = true;
+    }
 
     public void Start()
     {
@@ -30,5 +36,19 @@ public class FadeInUI : MonoBehaviour
                 }
             }
         }
+        if (fadeOut)
+        {
+            if (myUIGroup.alpha >= 0)
+            {
+                myUIGroup.alpha -= 0.008f;
+                if (myUIGroup.alpha == 0)
+                {
+                    fadeOut = false;
+                }
+            }
+        }
+        
     }
+
+    
 }

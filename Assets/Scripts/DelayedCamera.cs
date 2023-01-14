@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DelayedCamera : MonoBehaviour
 {
-    private Vector3 offset = new Vector3(0f, 2f, -10f);
+    private Vector3 offset = new Vector3(0f, 3.85f, -10f);
     public float smoothTime = 0.25f;
     private Vector3 velocity = Vector3.zero;
     public float yPostion = 1;
@@ -11,9 +11,11 @@ public class DelayedCamera : MonoBehaviour
 
     private void Update()
     {
-        Vector3 targetPosition = target.position + offset;
+       /* Vector3 targetPosition = target.position + offset;
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
-
+        */
+        Vector3 pos = new Vector3(target.position.x, transform.position.y, transform.position.z);
+        transform.position = pos;
     }
 
 
