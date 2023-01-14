@@ -24,10 +24,10 @@ public class ColorButton : MonoBehaviour
         sprite.color = Color.white;
     }
 
-    // Update is called once per frame
+    // Update is called once per frame  
     void Update()
     {
-        if (Input.GetKey(KeyCode.W))
+        if (Input.GetKey(KeyCode.F))
         {
             collide.enabled = true;
         }
