@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class FadeInUI : MonoBehaviour
 {
+    private Animator animation;
+
     [SerializeField] private CanvasGroup myUIGroup;
 
     [SerializeField] public bool fadeIn = false;
@@ -30,23 +32,23 @@ public class FadeInUI : MonoBehaviour
     }
     public void FadeInDelayed()
     {
-        StartCoroutine(waiter());
+        StartCoroutine(wait());
     }
-    IEnumerator waiter()
+    IEnumerator wait()
     {
         yield return new WaitForSeconds(1f);
         fadeInDelayed = true;
-
     }
     public void FadeIn()
     {
-        fadeIn = true;
+        //fadeIn = true;
     }
 
     public void Start()
     {
+        
         myUIGroup.alpha = 0f;
-        fadeIn = true;
+        //fadeIn = true;
 
     }
 

@@ -22,15 +22,14 @@ public class Credits : MonoBehaviour
     }
     public void CreditFadeOut(MenuManager menuManager)
     {
-
-        StartCoroutine(waiter());
-
-
         animation.SetTrigger("CreditFadeOut");
+        StartCoroutine(waiter());
     }
     IEnumerator waiter()
     {
-        yield return new WaitForSeconds(2f);
+        
+        yield return new WaitForSeconds(1.3f);
         targetObject.GetComponent<RectTransform>().localPosition = targetPosition;
+
     }
 }

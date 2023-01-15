@@ -52,15 +52,15 @@ public class MenuManager : MonoBehaviour
     IEnumerator waiter2()
     {
         
-        yield return new WaitForSeconds(1.1f);
+        yield return new WaitForSeconds(1.5f);
         FindObjectOfType<MainMenu>().Fade(this);
-        StopCoroutine(waiter2());
+        //StopCoroutine(waiter2());
     }
     IEnumerator waiter3()
     {
         FindObjectOfType<MainMenu>().FadeIn(this);
         yield return new WaitForSeconds(1f);
-        StopCoroutine(waiter3());
+        //StopCoroutine(waiter3());
 
     }
 }
