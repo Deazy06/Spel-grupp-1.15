@@ -11,10 +11,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Diyor.unity
     guid: 2e2ddec650927cc40afee98eb4a5a1c8
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: cd2f953cf6e75554b9109367f14e83d9
   - enabled: 0
     path: Assets/Scenes/Door.unity
     guid: 23cd823d9942bb648a7735f821d21d36
-  - enabled: 0
-    path: Assets/Scenes/Menu.unity
-    guid: cd2f953cf6e75554b9109367f14e83d9
   m_configObjects: {}

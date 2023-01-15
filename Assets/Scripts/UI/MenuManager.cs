@@ -30,6 +30,10 @@ public class MenuManager : MonoBehaviour
         FindObjectOfType<Credits>().CreditFadeOut(this);
     }
 
+    public void OpenOptions()
+    {
+        SceneManager.LoadScene("Menu");
+    }
 
     public void QuitGame()
     {

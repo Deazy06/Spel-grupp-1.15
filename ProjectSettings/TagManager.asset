@@ -9,6 +9,7 @@ TagManager:
   - Climb
   - Active
   - Inactive
+  - AudioSource
   layers:
   - Default
   - TransparentFX
