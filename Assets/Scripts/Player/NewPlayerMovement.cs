@@ -8,6 +8,7 @@ public class NewPlayerMovement : MonoBehaviour
     private float speed = 3f;
     private float jumpingPower = 11.5f;
     private bool isFacingRight = true;
+    bool climb = false;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
@@ -37,10 +38,33 @@ public class NewPlayerMovement : MonoBehaviour
 
         Flip(); // fixa ny script för flip för att drag pull gubben ska inte vända sig
 
+        if (climb == true && Input.GetKey(KeyCode.W))
+        {
+            transform.position += new Vector3(0, 5f, 0) * Time.deltaTime;
+            rb.AddForce(Vector3.up * 1400 * Time.deltaTime);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Climb")
+        {
+            float distance = Vector3.Distance(transform.position, collision.transform.position);
+            if (distance > 0.7f)
+            {
+                climb = true;
+            }
+        }
+        else
+        {
+            climb = false;
+        }
     }
 
 
-private void FixedUpdate()
+
+
+    private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }

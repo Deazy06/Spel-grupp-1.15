@@ -35,8 +35,8 @@ public class PlayerMovement : MonoBehaviour
         
         if (climb == true && Input.GetKey(KeyCode.W))
         {
-            transform.position += new Vector3(0, 3, 0) * Time.deltaTime;
-            rb2d.AddForce(Vector3.up * playerJump * 0.008f);
+            transform.position += new Vector3(0, 3.5f, 0) * Time.deltaTime;
+            rb2d.AddForce(Vector3.up * 600 * Time.deltaTime);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)

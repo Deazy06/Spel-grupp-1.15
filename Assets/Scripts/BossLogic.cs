@@ -5,7 +5,8 @@ using UnityEngine;
 public class BossLogic : MonoBehaviour
 {
     bool start = false;
-    [SerializeField] GameObject attackLocation;
+    [SerializeField] GameObject location;
+    [SerializeField] GameObject player;
     [SerializeField] GameObject scrap;
     [SerializeField] int randomizer;
     Collider2D collide;
@@ -14,6 +15,8 @@ public class BossLogic : MonoBehaviour
     void Start()
     {
         collide = GetComponent<Collider2D>();
+        location = GameObject.Find("BossLocation");
+        
     }
 
     // Update is called once per frame
@@ -58,11 +61,17 @@ public class BossLogic : MonoBehaviour
         else if (randomizer == 2)
         {
             print("2");
+            player = GameObject.Find("Player");
+            Instantiate(scrap, player.transform.position + new Vector3(0,10,0), transform.rotation);
         }
         else if (randomizer == 3)
         {
             print("3");
-            Instantiate(scrap, transform.position += new Vector3(10,10,Random.Range(-10,10)), transform.rotation);
+            for (int i = 0; i < 3; i++)
+            {
+                Instantiate(scrap, location.transform.position + new Vector3(Random.Range(-10, 10),0), transform.rotation);
+            }
+            
         }
     }
 }
