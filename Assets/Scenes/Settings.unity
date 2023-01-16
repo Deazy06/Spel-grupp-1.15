@@ -1429,7 +1429,6 @@ GameObject:
   - component: {fileID: 751651291}
   - component: {fileID: 751651290}
   - component: {fileID: 751651294}
-  - component: {fileID: 751651295}
   - component: {fileID: 751651296}
   m_Layer: 5
   m_Name: Audio
@@ -1533,18 +1532,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 49fa5d544964fc74b8abda0a706c18dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &751651295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 751651289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8aba2d895fb02f74fbbb56fc1e5d6f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &751651296
@@ -3083,7 +3070,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 751651295}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: DisplaySetActive, Assembly-CSharp
         m_MethodName: OpenDisplay
         m_Mode: 1

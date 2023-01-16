@@ -1,10 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine.UI;
 using UnityEngine;
-using JetBrains.Annotations;
+using UnityEngine.SceneManagement;
 
-public class Inventory : MonoBehaviour // Diyor made this lol
+public class GameToSettings : MonoBehaviour
 {
     public GameObject shopMenuUI;
     private int toggle;
@@ -16,7 +15,7 @@ public class Inventory : MonoBehaviour // Diyor made this lol
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             this.toggle += 1;
         }
@@ -42,8 +41,8 @@ public class Inventory : MonoBehaviour // Diyor made this lol
         }
 
 
-       
-         
+
+
 
     }
     public void PauseGame()
