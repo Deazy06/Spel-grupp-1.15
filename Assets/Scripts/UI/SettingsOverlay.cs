@@ -26,10 +26,15 @@ public class SettingsOverlay : MonoBehaviour
     public void LoadMenuScene()
     {
         SceneManager.LoadScene("DiyorMenu");
+        Time.timeScale = 1;
 
     }
     public void BackToGame()
     {   
         SceneManager.LoadScene("Diyor");
+    }
+    public void ResumeGame()
+    {
+        Time.timeScale = 1;
     }
 }
