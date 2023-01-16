@@ -16,7 +16,7 @@ public class ButtonSound : MonoBehaviour
 
     public void ClickSound()
     {
-        mySounds .PlayOneShot (clickSound);
+        mySounds.PlayOneShot (clickSound);
     }
 
 }

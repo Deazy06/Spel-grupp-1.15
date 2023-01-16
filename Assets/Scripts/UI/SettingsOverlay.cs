@@ -29,7 +29,7 @@ public class SettingsOverlay : MonoBehaviour
 
     }
     public void BackToGame()
-    {
+    {   
         SceneManager.LoadScene("Diyor");
     }
 }
