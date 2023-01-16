@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Button : MonoBehaviour
 {
-    public bool Trigger;
+    bool playerTrigger = false;
+    bool objTrigger = false;
 
     // Start is called before the first frame update
     void Start()
@@ -15,26 +16,45 @@ public class Button : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (playerTrigger == true|| objTrigger == true)
+        {
+            gameObject.tag = "Active";
+        }
+        else
+        {
+            gameObject.tag = "Inactive";
+        }
     }
 
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        //if (other.tag == "Player" && other.tag == "Enemy") 
 
         if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Inactive"))
         {
             print("ACtive");
-            Trigger = true;
-            gameObject.tag = "Active";
+            playerTrigger = true;
         }
-        
+        if (collision.gameObject.CompareTag("Box") && gameObject.CompareTag("Inactive"))
+        {
+            print("ACtive");
+            objTrigger = true;
+        }
+
+
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        Trigger = false;
-        gameObject.tag = "Inactive";
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            playerTrigger = false;
+        }
+        if (collision.gameObject.CompareTag("Box"))
+        {
+            objTrigger = false;
+        }
     }
+
+
 
 }
