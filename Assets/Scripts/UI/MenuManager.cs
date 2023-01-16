@@ -28,6 +28,7 @@ public class MenuManager : MonoBehaviour
     {
         StartCoroutine(waiter3());
         FindObjectOfType<Credits>().CreditFadeOut(this);
+        FindObjectOfType<MainMenu>().FadeIn(this);
     }
 
     public void OpenOptions()
@@ -58,9 +59,10 @@ public class MenuManager : MonoBehaviour
     }
     IEnumerator waiter3()
     {
-        FindObjectOfType<MainMenu>().FadeIn(this);
+        
         yield return new WaitForSeconds(1f);
         //StopCoroutine(waiter3());
+        //FindObjectOfType<MainMenu>().FadeIn(this);
 
     }
 }

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SettingsOverlay : MonoBehaviour
 {
+    /*
     public void OpenOverlay()
     {
         gameObject.SetActive(true);
@@ -13,6 +14,7 @@ public class SettingsOverlay : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
+    */
 
     public void LoadSettingsScene()
     {
