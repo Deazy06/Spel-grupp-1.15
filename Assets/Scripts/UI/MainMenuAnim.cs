@@ -20,4 +20,8 @@ public class MainMenuAnim : MonoBehaviour
     {
         animation.SetTrigger("MainFadeIn");
     }
+    public void GameStart()
+    {
+        animation.SetTrigger("MainFadeOut");
+    }
 }
