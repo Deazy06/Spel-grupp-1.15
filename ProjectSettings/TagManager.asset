@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Inactive
+  - Active
+  - Danger
+  - Undefined
+  - Climb
+  - Box
   layers:
   - Default
   - TransparentFX
