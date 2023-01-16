@@ -14,7 +14,7 @@ public class DelayedCamera : MonoBehaviour
        /* Vector3 targetPosition = target.position + offset;
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, smoothTime);
         */
-        Vector3 pos = new Vector3(target.position.x, transform.position.y, transform.position.z);
+        Vector3 pos = new Vector3(target.position.x, transform.position.y, transform.position.z) ;
         transform.position = pos;
     }
 

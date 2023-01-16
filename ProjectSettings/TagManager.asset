@@ -3,26 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - Danger
-  - Slope
-  - Climb
-  - Active
-  - Inactive
-<<<<<<< Updated upstream
-  - AudioSource
-=======
-  - Button wall
-  - Button
->>>>>>> Stashed changes
+  tags: []
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - Door
+  - 
   - Water
   - UI
-  - Ground
+  - 
   - 
   - 
   - 
@@ -51,7 +40,4 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: BG
-    uniqueID: 2913406433
     locked: 0
