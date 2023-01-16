@@ -25,14 +25,21 @@ public class NewPlayerMovement : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
+            animation.SetTrigger("Jumping");
+        }
+        if (Input.GetKeyUp(KeyCode.Space))
+        {
+            animation.ResetTrigger("Jumping");
         }
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
         {
+            animation.ResetTrigger("NotWalking");
             animation.SetTrigger("Walking");
         }
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
+            animation.ResetTrigger("Walking");
             animation.SetTrigger("NotWalking");
         }
 
