@@ -42,8 +42,8 @@ public class Inventory : MonoBehaviour // Diyor made this lol
         }
 
 
-       
-         
+
+
 
     }
     public void PauseGame()

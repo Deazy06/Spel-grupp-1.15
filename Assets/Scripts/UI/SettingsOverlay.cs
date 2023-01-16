@@ -18,12 +18,18 @@ public class SettingsOverlay : MonoBehaviour
 
     public void LoadSettingsScene()
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene("Settings");
+
     }
 
     public void LoadMenuScene()
     {
         SceneManager.LoadScene("DiyorMenu");
 
+    }
+    public void BackToGame()
+    {
+        SceneManager.LoadScene("Diyor");
     }
 }
