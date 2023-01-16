@@ -21,6 +21,8 @@ public class NewPlayerMovement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+        animation.SetFloat("xSpeed", Mathf.Abs(horizontal));
+
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
