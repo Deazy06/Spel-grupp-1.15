@@ -9,12 +9,8 @@ TagManager:
   - Climb
   - Active
   - Inactive
-<<<<<<< Updated upstream
   - AudioSource
-=======
-  - Button wall
-  - Button
->>>>>>> Stashed changes
+  - Pushable
   layers:
   - Default
   - TransparentFX
