@@ -18,6 +18,7 @@ public class ColorButton : MonoBehaviour
         colorchoose.Add(Color.blue);
         colorchoose.Add(Color.green);
         colorchoose.Add(Color.red);
+        colorchoose.Add(Color.yellow);
         colorchoose.Add(Color.black);
 
         sprite.color = Color.white;
@@ -38,7 +39,7 @@ public class ColorButton : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player" && activeColor < 2)
+        if (collision.gameObject.tag == "Player" && activeColor < 3)
         {
             activeColor += 1;
             sprite.color = colorchoose[activeColor];
