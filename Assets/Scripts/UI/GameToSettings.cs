@@ -30,6 +30,7 @@ public class GameToSettings : MonoBehaviour
                     if (myUIGroup.alpha >= 1)
                     {
                         fadeIn = false;
+                        gameObject.SetActive(false);
                     }
                 }
             }
@@ -40,7 +41,6 @@ public class GameToSettings : MonoBehaviour
             shopMenuUI.SetActive(true);
 
             this.toggle += 1;
-
             PauseGame();
         }
 
@@ -57,8 +57,6 @@ public class GameToSettings : MonoBehaviour
 
 
 
-
-
     }
     public void PauseGame()
     {
@@ -67,6 +65,5 @@ public class GameToSettings : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1;
-       //toggle += 1;
     }
 }
