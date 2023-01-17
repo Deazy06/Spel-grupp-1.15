@@ -36,13 +36,13 @@ public class NewPlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D))
         {
-            animation.ResetTrigger("NotWalking");
-            animation.SetTrigger("Walking");
+            //animation.ResetTrigger("NotWalking");
+            //animation.SetTrigger("Walking");
         }
         if (Input.GetKeyUp(KeyCode.A) || Input.GetKeyUp(KeyCode.D))
         {
-            animation.ResetTrigger("Walking");
-            animation.SetTrigger("NotWalking");
+            //animation.ResetTrigger("Walking");
+            //animation.SetTrigger("NotWalking");
         }
 
         Flip(); // fixa ny script för flip för att drag pull gubben ska inte vända sig
