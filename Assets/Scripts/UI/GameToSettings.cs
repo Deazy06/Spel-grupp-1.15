@@ -7,6 +7,9 @@ public class GameToSettings : MonoBehaviour
 {
     public GameObject shopMenuUI;
     private int toggle;
+    [SerializeField] private CanvasGroup myUIGroup;
+    [SerializeField] public bool fadeIn = false;
+
     void Start()
     {
         shopMenuUI.SetActive(false);
@@ -17,7 +20,19 @@ public class GameToSettings : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            fadeIn = true;
             this.toggle += 1;
+            if (fadeIn)
+            {
+                if (myUIGroup.alpha < 1)
+                {
+                    myUIGroup.alpha += 1f;
+                    if (myUIGroup.alpha >= 1)
+                    {
+                        fadeIn = false;
+                    }
+                }
+            }
         }
 
         if (toggle == 1)
@@ -35,7 +50,7 @@ public class GameToSettings : MonoBehaviour
             ResumeGame();
         }
 
-        if (toggle == 4)
+        if (toggle == 3)
         {
             this.toggle = 1;
         }
@@ -52,5 +67,6 @@ public class GameToSettings : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1;
+       //toggle += 1;
     }
 }
