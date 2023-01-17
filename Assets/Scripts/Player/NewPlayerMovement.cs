@@ -14,6 +14,7 @@ public class NewPlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+
     private void Start()
     {
         animation = GetComponent<Animator>();
@@ -21,14 +22,26 @@ public class NewPlayerMovement : MonoBehaviour
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
+        
         animation.SetFloat("xSpeed", Mathf.Abs(horizontal));
-
+        animation.SetFloat("ySpeed", rb.velocity.y);
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             animation.SetTrigger("Jumping");
+            animation.SetTrigger("FallingStop");
         }
+
+        /*
+        if (Input.GetKeyDown(KeyCode.Space) != IsGrounded())
+        {
+            animation.SetTrigger("FallingStop");
+        } 
+        */
+
+        
+
         if (Input.GetKeyUp(KeyCode.Space))
         {
             animation.ResetTrigger("Jumping");
