@@ -8,6 +8,6 @@ public class FullSceneToggle : MonoBehaviour
     {
         Screen.fullScreen = is_fullscene;
 
-        Debug.Log("fullscreen is activated");
+        Debug.Log("fullscreen is " + is_fullscene);
     }
 }
