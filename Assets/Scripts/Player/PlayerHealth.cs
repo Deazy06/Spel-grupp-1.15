@@ -54,7 +54,6 @@ public class PlayerHealth : MonoBehaviour
         if (collision.gameObject.tag == "Danger")
         {
             print("aj");
-            hp -= 1;
             sprite.color = colorchoose[hp];
         }
     }
