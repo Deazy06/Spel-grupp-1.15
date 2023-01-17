@@ -55,7 +55,7 @@ public class GameToSettings : MonoBehaviour
             this.toggle = 1;
         }
 
-
+            
 
     }
     public void PauseGame()
