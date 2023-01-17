@@ -318,6 +318,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1170175522}
+        m_TargetAssemblyTypeName: MainMenuAnim, Assembly-CSharp
+        m_MethodName: GameStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!82 &49829163
 AudioSource:
   m_ObjectHideFlags: 0
@@ -559,7 +571,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381560863
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 47d7a50e0fe628b4c9efcaf04a34c11a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -710,7 +722,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381560863
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 25b20800e8dc1f9468d9f2b7bf80e535, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1102,8 +1114,8 @@ GameObject:
   - component: {fileID: 600622301}
   - component: {fileID: 600622300}
   - component: {fileID: 600622304}
-  - component: {fileID: 600622305}
   - component: {fileID: 600622306}
+  - component: {fileID: 600622307}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -1207,19 +1219,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b83ddf1fbd150d4f8c3ce593938d880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &600622305
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600622299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a2f2c701ebe84049bd78b854bc336fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targetObject: {fileID: 1170175518}
 --- !u!114 &600622306
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1232,6 +1231,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49fa5d544964fc74b8abda0a706c18dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &600622307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 600622299}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2f2c701ebe84049bd78b854bc336fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetObject: {fileID: 1170175518}
 --- !u!1 &814796754
 GameObject:
   m_ObjectHideFlags: 0
@@ -2126,7 +2138,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381560863
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 47d7a50e0fe628b4c9efcaf04a34c11a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2705,7 +2717,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381560863
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: bc0c0683a88cec14796539ac2fe33040, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2819,7 +2831,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381560863
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: bc0c0683a88cec14796539ac2fe33040, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -2930,6 +2942,7 @@ GameObject:
   - component: {fileID: 1370214458}
   - component: {fileID: 1370214462}
   - component: {fileID: 1370214461}
+  - component: {fileID: 1370214463}
   m_Layer: 5
   m_Name: Text (TMP) (2)
   m_TagString: Untagged
@@ -2997,7 +3010,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 49829160}
+  m_TargetGraphic: {fileID: 1370214459}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -3230,9 +3243,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cb94d7b841ad0846ab6a6c528dc2a25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mySounds: {fileID: 814796760}
+  mySounds: {fileID: 1370214461}
   hoverSound: {fileID: 8300000, guid: eb127aae11754ae4997cb752645f3f55, type: 3}
   clickSound: {fileID: 8300000, guid: eb127aae11754ae4997cb752645f3f55, type: 3}
+--- !u!114 &1370214463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370214456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 0
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1370214462}
+          m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+          m_MethodName: HoverSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - eventID: 4
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1370214462}
+          m_TargetAssemblyTypeName: ButtonSound, Assembly-CSharp
+          m_MethodName: ClickSound
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
 --- !u!1 &1390393977
 GameObject:
   m_ObjectHideFlags: 0
@@ -3290,7 +3348,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1381560863
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: -1
   m_Sprite: {fileID: 21300000, guid: 25b20800e8dc1f9468d9f2b7bf80e535, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

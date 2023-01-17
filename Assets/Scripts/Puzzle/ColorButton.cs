@@ -7,7 +7,6 @@ public class ColorButton : MonoBehaviour
     SpriteRenderer sprite;
     List<Color> colorchoose;
     Collider2D collide;
-    [SerializeField] int triggerColor;
     [SerializeField] int activeColor = 0;
     // Start is called before the first frame update
     void Start()
@@ -35,14 +34,7 @@ public class ColorButton : MonoBehaviour
         {
             collide.enabled = false;
         }
-        if (activeColor == triggerColor)
-        {
-            gameObject.tag = "Active";
-        }
-        else 
-        {
-            gameObject.tag = "Inactive";
-        }
+        
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {

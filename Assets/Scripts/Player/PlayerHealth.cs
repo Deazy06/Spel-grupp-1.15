@@ -41,7 +41,7 @@ public class PlayerHealth : MonoBehaviour
 
         if (hp <= 0)
         {
-            GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
+            GameObject.Find("Player").GetComponent<NewPlayerMovement>().enabled = false;
             if (Input.GetKeyDown(KeyCode.R))
             {
                 PlayerRespawn();
@@ -71,7 +71,7 @@ public class PlayerHealth : MonoBehaviour
         hp = 3;
         transform.position = new Vector3(0, 0, 0);
         transform.position = respawnPoint;
-        GetComponent<PlayerMovement>().enabled = true;
+        GetComponent<NewPlayerMovement>().enabled = true;
         sprite.color = colorchoose[hp];
     }
 }
