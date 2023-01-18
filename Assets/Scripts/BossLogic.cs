@@ -11,6 +11,9 @@ public class BossLogic : MonoBehaviour
     [SerializeField] GameObject box;
     [SerializeField] int randomizer;
     Collider2D collide;
+
+    public AudioSource bossaudio;
+
     float timer;
     float timer1;
     float deathTimer;
@@ -53,6 +56,7 @@ public class BossLogic : MonoBehaviour
                     Destroy(boss);
                     timer = 0;
                     deathTimer = 0;
+                    bossaudio.Stop();
                     start = false;
                     
                 }
@@ -69,6 +73,7 @@ public class BossLogic : MonoBehaviour
     {
         collide.enabled = false;
         start = true;
+        bossaudio.Play();
         Randomize();
 
     }  
