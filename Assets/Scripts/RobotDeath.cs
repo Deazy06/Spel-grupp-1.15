@@ -22,6 +22,6 @@ public class RobotDeath : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-;
+
     }
 }
