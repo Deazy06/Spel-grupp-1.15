@@ -6,16 +6,19 @@ public class BossLogic : MonoBehaviour
 {
     bool start = false;
     [SerializeField] GameObject location;
+    [SerializeField] GameObject boss;
     [SerializeField] GameObject player;
-    [SerializeField] GameObject scrap;
+    [SerializeField] GameObject box;
     [SerializeField] int randomizer;
     Collider2D collide;
     float timer;
-    // Start is called before the first frame update
+    float timer1;
+    float deathTimer;
+    // Start is called before the first frame update Leon har n liten snopp ;) jag vet hur vet du d? Vänskap
     void Start()
     {
         collide = GetComponent<Collider2D>();
-        location = GameObject.Find("BossLocation");
+        location = GameObject.Find("SpawnLocation");
         
     }
 
@@ -23,7 +26,7 @@ public class BossLogic : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.L))
         {
             Randomize();
         }
@@ -35,7 +38,31 @@ public class BossLogic : MonoBehaviour
                 timer = 0;
                 Randomize();
             }
+            timer1 += Time.deltaTime;
+            if (timer1 >= 2)
+            {
+                timer1 = 0;
+                deathTimer += 1;
+                if (deathTimer == 20)
+                {
+                    
+                    Instantiate(box, location.transform.position + new Vector3(3.5f, 0, 0), transform.rotation);
+                }
+                else if (deathTimer == 21)
+                {
+                    Destroy(boss);
+                    timer = 0;
+                    deathTimer = 0;
+                    start = false;
+                    
+                }
+
+
+
+            }
         }
+        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -50,7 +77,10 @@ public class BossLogic : MonoBehaviour
         start = false;
         start = true;
     }
-
+    private void BossDeath()
+    {
+        Instantiate(box, location.transform.position + new Vector3(2, 0, 0), transform.rotation);
+    }
     private void Randomize()
     {
         randomizer = Random.Range(1, 4);
@@ -62,14 +92,14 @@ public class BossLogic : MonoBehaviour
         {
             print("2");
             player = GameObject.Find("Player");
-            Instantiate(scrap, player.transform.position + new Vector3(0,10,0), transform.rotation);
+            Instantiate(box, player.transform.position + new Vector3(0,10,0), transform.rotation);
         }
         else if (randomizer == 3)
         {
             print("3");
             for (int i = 0; i < 3; i++)
             {
-                Instantiate(scrap, location.transform.position + new Vector3(Random.Range(-10, 10),0), transform.rotation);
+                Instantiate(box, location.transform.position + new Vector3(Random.Range(0, -11), 0, 0), transform.rotation);
             }
             
         }
