@@ -7,6 +7,7 @@ public class PlayerPushing : MonoBehaviour
 
     public float distance = 1f;
     public LayerMask boxMask;
+    public bool isPushing;
 
     GameObject box;
 
@@ -25,13 +26,14 @@ public class PlayerPushing : MonoBehaviour
         if (hit.collider != null && hit.collider.gameObject.tag == "Pushable" && Input.GetKeyDown(KeyCode.F))
         {
             box = hit.collider.gameObject;
-
+            isPushing = true;
             box.GetComponent<FixedJoint2D>().enabled = true;
             box.GetComponent<BoxPulling>().beingPushed = true;
             box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
         }
         else if (Input.GetKeyUp(KeyCode.F))
         {
+            isPushing = false;
             box.GetComponent<FixedJoint2D>().enabled = false;
             box.GetComponent<BoxPulling>().beingPushed = false;
         }
