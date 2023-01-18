@@ -12,7 +12,11 @@ TagManager:
   - Box
   - AudioListener
   - AudioSource
+<<<<<<< Updated upstream
   - Pushable
+=======
+  - NoDanger
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
