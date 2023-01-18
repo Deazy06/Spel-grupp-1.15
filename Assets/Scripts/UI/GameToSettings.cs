@@ -44,7 +44,7 @@ public class GameToSettings : MonoBehaviour
             PauseGame();
         }
 
-        if (toggle == 3)
+        if (toggle == 3)    
         {
             shopMenuUI.SetActive(false);
             ResumeGame();
