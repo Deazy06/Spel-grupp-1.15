@@ -22,7 +22,7 @@ public class PlayerPushing : MonoBehaviour
         Physics2D.queriesStartInColliders = false; //problemet kan vara här, ta bort en av dem
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.right * transform.localScale.x, distance, boxMask); // alt 2
 
-        if (hit.collider != null && hit.collider.gameObject.tag == "Pushable" && Input.GetKeyDown(KeyCode.E))
+        if (hit.collider != null && hit.collider.gameObject.tag == "Pushable" && Input.GetKeyDown(KeyCode.F))
         {
             box = hit.collider.gameObject;
 
@@ -30,7 +30,7 @@ public class PlayerPushing : MonoBehaviour
             box.GetComponent<BoxPulling>().beingPushed = true;
             box.GetComponent<FixedJoint2D>().connectedBody = this.GetComponent<Rigidbody2D>();
         }
-        else if (Input.GetKeyUp(KeyCode.E))
+        else if (Input.GetKeyUp(KeyCode.F))
         {
             box.GetComponent<FixedJoint2D>().enabled = false;
             box.GetComponent<BoxPulling>().beingPushed = false;
