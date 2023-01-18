@@ -6,6 +6,7 @@ public class Button : MonoBehaviour
 {
     bool playerTrigger = false;
     bool objTrigger = false;
+    [SerializeField] SpriteRenderer sprite;
 
     // Start is called before the first frame update
     void Start()
@@ -19,10 +20,12 @@ public class Button : MonoBehaviour
         if (playerTrigger == true|| objTrigger == true)
         {
             gameObject.tag = "Active";
+            sprite.color = Color.white;
         }
         else
         {
             gameObject.tag = "Inactive";
+            sprite.color = Color.grey;
         }
     }
 

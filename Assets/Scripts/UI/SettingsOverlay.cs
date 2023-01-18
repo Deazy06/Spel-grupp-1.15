@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class SettingsOverlay : MonoBehaviour
 {
 
-     void OpenOverlay()
+     public void OpenOverlay()
     {
         gameObject.SetActive(true);
     }
@@ -28,7 +28,7 @@ public class SettingsOverlay : MonoBehaviour
         SceneManager.LoadScene("DiyorMenu");
         Time.timeScale = 1;
 
-    }
+    }   
     public void BackToGame()
     {   
         SceneManager.LoadScene("Diyor");
