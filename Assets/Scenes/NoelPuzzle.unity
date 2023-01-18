@@ -6784,6 +6784,7 @@ MonoBehaviour:
   boss: {fileID: 1816831335}
   player: {fileID: 365243301}
   box: {fileID: 7195242825020999192, guid: 5f6a84fd6153a314a94daf86a980486a, type: 3}
+  macka: {fileID: 2946142737166213732, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
   randomizer: 0
   bossaudio: {fileID: 1825716216}
 --- !u!61 &1825716214

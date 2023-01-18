@@ -9,6 +9,7 @@ public class BossLogic : MonoBehaviour
     [SerializeField] GameObject boss;
     [SerializeField] GameObject player;
     [SerializeField] GameObject box;
+    [SerializeField] GameObject macka;
     [SerializeField] int randomizer;
     Collider2D collide;
 
@@ -92,6 +93,8 @@ public class BossLogic : MonoBehaviour
         if (randomizer == 1)
         {
             print("1");
+            Instantiate(macka, location.transform.position + new Vector3(Random.Range(0, -11), 0, 0), transform.rotation);
+
         }
         else if (randomizer == 2)
         {
