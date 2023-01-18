@@ -8,7 +8,6 @@ public class HealthManager : MonoBehaviour
     public Image healthBar;
     public float healthAmount = 100f;
     SpriteRenderer sprite;
-    List<Color> colorchoose;
     Vector3 respawnPoint;
 
 
@@ -19,11 +18,6 @@ public class HealthManager : MonoBehaviour
 
         sprite = GetComponent<SpriteRenderer>();
         GetComponent<Collider2D>();
-        colorchoose = new List<Color>();
-        colorchoose.Add(new Color(0, 0, 0, 1));
-        colorchoose.Add(new Color(0, 0.5f, 0, 1));
-        colorchoose.Add(new Color(0.5f, 1, 0.5f, 1));
-        colorchoose.Add(new Color(1, 1, 1, 1));
     }
 
     // Update is called once per frame
@@ -55,20 +49,13 @@ public class HealthManager : MonoBehaviour
         */
     }
 
-    private void OnCollisionStay2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "Danger")
-        {
-            TakeDamage(1);
-            sprite.color = new Color(0, healthAmount / 100, 0, 1);
-        }
-    }
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Danger")
         {
             TakeDamage(10);
-            sprite.color = new Color(0, healthAmount / 100, 0, 1);
+            sprite.color = new Color(healthAmount / 100, 0, 0, 1);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
@@ -76,7 +63,7 @@ public class HealthManager : MonoBehaviour
         if (collision.gameObject.tag == "Danger")
         {
             TakeDamage(1);
-            sprite.color = new Color(0, healthAmount / 100, 0, 1);
+            sprite.color = new Color(healthAmount / 100, 0,0, 1);
         }
     }
 
@@ -100,6 +87,14 @@ public class HealthManager : MonoBehaviour
             respawnPoint = transform.position;
             print("Set Spawnpoint");
         }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        sprite.color = new Color(1, 1, 1, 1);
+    }
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        sprite.color = new Color(1, 1, 1, 1);
     }
     private void PlayerRespawn()
     {
