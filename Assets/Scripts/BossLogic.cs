@@ -14,7 +14,7 @@ public class BossLogic : MonoBehaviour
     float timer;
     float timer1;
     float deathTimer;
-    // Start is called before the first frame update Leon har n liten snopp ;) jag vet hur vet du d? Vänskap
+
     void Start()
     {
         collide = GetComponent<Collider2D>();
