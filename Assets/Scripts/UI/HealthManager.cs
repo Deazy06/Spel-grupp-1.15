@@ -57,6 +57,12 @@ public class HealthManager : MonoBehaviour
             TakeDamage(10);
             sprite.color = new Color(healthAmount / 100, 0, 0, 1);
         }
+        if (collision.gameObject.tag == "Food")
+        {
+            Heal(10);
+            Destroy(collision.gameObject);
+          
+        }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
@@ -87,12 +93,7 @@ public class HealthManager : MonoBehaviour
             respawnPoint = transform.position;
             print("Set Spawnpoint");
         }
-        if (collision.gameObject.tag == "Food")
-        {
-            Heal(5);
-            Destroy(collision.gameObject);
-            print("noelnaz");
-        }
+        
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
