@@ -14,6 +14,7 @@ TagManager:
   - Box
   - AudioListener
   - AudioSource
+  - Wall
   layers:
   - Default
   - TransparentFX

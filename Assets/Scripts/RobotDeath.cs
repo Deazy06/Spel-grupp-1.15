@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class RobotDeath : MonoBehaviour
 {
+    Collider2D collid;
     // Start is called before the first frame update
     void Start()
     {
-
+        collid = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
@@ -18,9 +19,10 @@ public class RobotDeath : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Pushable"))
+        if (collision.gameObject.CompareTag("Danger"))
         {
-            Destroy(this.gameObject);
+            transform.localScale = new Vector3(5, 1, 1);
+            collid.enabled = false;
         }
 
     }

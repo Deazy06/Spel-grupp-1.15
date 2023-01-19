@@ -14,7 +14,7 @@ public class HealthManager : MonoBehaviour
     public GameObject grave1;
     public GameObject grave2;
 
-    [SerializeField] private AudioSource deathsound;
+    //[SerializeField] private AudioSource deathsound;
 
     // Start is called before the first frame update
     void Start()
@@ -36,7 +36,7 @@ public class HealthManager : MonoBehaviour
             sprite.color = new Color(0, 0, 0, 0);
             grave1.SetActive(true);
             grave2.SetActive(true);
-            deathsound.Play();
+            //deathsound.Play();
           
             if (Input.GetKeyDown(KeyCode.R))
             {
