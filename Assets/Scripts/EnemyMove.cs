@@ -41,18 +41,14 @@ public class EnemyMove : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        if (rightmove == true)
         {
-            if (rightmove == true)
-            {
-                rightmove = false;
-            }
-            else
-            {
-                rightmove = true;
-            }
+            rightmove = false;
         }
-        
+        else
+        {
+            rightmove = true;
+        }
     }
 
     IEnumerator IdleAnim()
@@ -67,11 +63,11 @@ public class EnemyMove : MonoBehaviour
     }
     IEnumerator WaitRandom()
     {
-        float waitTime = Random.Range(3f, 5f);
+        float waitTime = Random.Range(2.8f, 4.8f);
         yield return new WaitForSeconds(waitTime);
         Debug.Log("Coroutine finished after waiting for " + waitTime + " seconds.");
         StartCoroutine(IdleAnim());
-        yield return new WaitForSeconds(2f); // wait 2 seconds before WaitRandom 
+        yield return new WaitForSeconds(2f); // wait 2 seconds before starting WaitRandom again
         StartCoroutine(WaitRandom());
     }
 }
