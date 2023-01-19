@@ -73,6 +73,7 @@ public class PlayerPushing : MonoBehaviour
         {
             animation.SetBool("Push", false);
         }
+
     }
 
     private void OnDrawGizmos()

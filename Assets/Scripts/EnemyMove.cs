@@ -32,9 +32,9 @@ public class EnemyMove : MonoBehaviour
             sr.flipX = true;
         }
     }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        print("collide");
         if (rightmove == true)
         {
             rightmove = false;
@@ -43,6 +43,12 @@ public class EnemyMove : MonoBehaviour
         {
             rightmove = true;
         }
+    }
+
+    IEnumerator IdleAnim()
+    {
+        yield return new WaitForSeconds(1f);
+
     }
 
 }
