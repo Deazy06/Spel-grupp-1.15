@@ -47,7 +47,7 @@ public class MenuManager : MonoBehaviour
 
         //Wait for 4 seconds
         yield return new WaitForSeconds(3.5f);
-        SceneManager.LoadScene("Diyor");
+        SceneManager.LoadScene("NoelMain");
         
     }
     IEnumerator waiter2()
