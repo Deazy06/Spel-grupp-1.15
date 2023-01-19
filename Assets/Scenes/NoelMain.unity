@@ -943,7 +943,7 @@ GameObject:
   - component: {fileID: 103817668}
   - component: {fileID: 103817670}
   - component: {fileID: 103817669}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: Plane (8)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -958,8 +958,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 103817667}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 107.52, y: -8.68, z: -1.1820602}
-  m_LocalScale: {x: 2, y: 2.5, z: 1}
+  m_LocalPosition: {x: 107.5131, y: -8.417, z: -1.1820602}
+  m_LocalScale: {x: 2.0139427, y: 3.061584, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1473818785}
@@ -978,7 +978,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.013501704, y: 0.0029604435}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -989,7 +989,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.0270034, y: 1.0059209}
   m_EdgeRadius: 0
 --- !u!212 &103817670
 SpriteRenderer:
@@ -1125,7 +1125,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 6
+  m_Constraints: 4
 --- !u!61 &122625084
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1246,7 +1246,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122625082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 27.468018, y: -7.0266714, z: 0.021214455}
+  m_LocalPosition: {x: 24.86, y: -7.04, z: 0.021214455}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
