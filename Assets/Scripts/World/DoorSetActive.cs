@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class DoorSetActive : MonoBehaviour
 {
-    public AudioSource door;
+    //public AudioSource door;
     public void OpenDoor()
     {
         gameObject.SetActive(false);
 
 
-        door.Play();
+        //door.Play();
     }
 
 

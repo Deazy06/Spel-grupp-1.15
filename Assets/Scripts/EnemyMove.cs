@@ -32,17 +32,22 @@ public class EnemyMove : MonoBehaviour
             sr.flipX = true;
         }
     }
+    
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        print("collide");
-        if (rightmove == true)
+        if (collision.gameObject.tag == "Wall")
         {
-            rightmove = false;
+            if (rightmove == true)
+            {
+                rightmove = false;
+            }
+            else
+            {
+                rightmove = true;
+            }
         }
-        else
-        {
-            rightmove = true;
-        }
+        
+        
     }
-
 }

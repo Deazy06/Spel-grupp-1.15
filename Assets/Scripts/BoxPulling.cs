@@ -17,7 +17,7 @@ public class BoxPulling : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (beingPushed = false)
+        if (beingPushed == false)
         {
             transform.position = new Vector3(xPos, transform.position.y);
         }

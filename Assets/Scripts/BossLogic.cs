@@ -76,6 +76,7 @@ public class BossLogic : MonoBehaviour
             timer = 0;
             deathTimer = 0;
             collide.enabled = true;
+            bossaudio.Stop();
         }
     }
 
