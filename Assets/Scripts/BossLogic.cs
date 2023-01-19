@@ -71,6 +71,7 @@ public class BossLogic : MonoBehaviour
         deathCheck = GameObject.Find("Player").GetComponent<SpriteRenderer>();
         if (deathCheck.color == new Color(0, 0, 0, 0))
         {
+
             start = false;
             timer = 0;
             deathTimer = 0;
