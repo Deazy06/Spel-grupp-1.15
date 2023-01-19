@@ -10,6 +10,7 @@ public class BossLogic : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject box;
     [SerializeField] GameObject macka;
+    [SerializeField] SpriteRenderer deathCheck;
     [SerializeField] int randomizer;
     Collider2D collide;
 
@@ -66,16 +67,27 @@ public class BossLogic : MonoBehaviour
 
             }
         }
-        
 
+        deathCheck = GameObject.Find("Player").GetComponent<SpriteRenderer>();
+        if (deathCheck.color == new Color(0, 0, 0, 0))
+        {
+            start = false;
+            timer = 0;
+            deathTimer = 0;
+            collide.enabled = true;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        collide.enabled = false;
-        start = true;
-        bossaudio.Play();
-        Randomize();
+        if (collision.gameObject.tag == "Player")
+        {
+            collide.enabled = false;
+            start = true;
+            bossaudio.Play();
+            Randomize();
+        }
+        
 
     }  
     private void Restart()
