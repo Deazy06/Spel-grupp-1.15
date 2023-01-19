@@ -194,11 +194,15 @@ public class DoorTriggerButton : MonoBehaviour
         */
         
     }
-    private void OnTriggerEnter2D(Collider2D collision2d)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        chooseTrigger1.tag = "Inactive";
-        active1 = false;
-        door.CloseDoor();
+        if (collision.gameObject.tag == "Player")
+        {
+            active1 = false;
+            door.CloseDoor();
+        }
+        
+        
         
     }
 }

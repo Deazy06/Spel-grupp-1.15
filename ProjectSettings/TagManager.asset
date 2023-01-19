@@ -10,11 +10,15 @@ TagManager:
   - Active
   - Slope
   - Food
+  - NoDanger
+  - Box
+  - AudioListener
+  - AudioSource
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - 
