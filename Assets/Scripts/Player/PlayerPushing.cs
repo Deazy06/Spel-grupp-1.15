@@ -46,6 +46,33 @@ public class PlayerPushing : MonoBehaviour
         {
             animation.SetBool("Pull", false);
         }
+
+        if (isPushing && Input.GetKeyDown(KeyCode.D) && target.localScale.x == 5.57f)
+        {
+            animation.SetBool("Push", true);
+        }
+        if (isPushing == false || Input.GetKeyUp(KeyCode.D))
+        {
+            animation.SetBool("Push", false);
+        }
+
+        if (isPushing && Input.GetKeyDown(KeyCode.D) && target.localScale.x == -5.57f)
+        {
+            animation.SetBool("Pull", true);
+        }
+        if (isPushing == false || Input.GetKeyUp(KeyCode.D))
+        {
+            animation.SetBool("Pull", false);
+        }
+
+        if (isPushing && Input.GetKeyDown(KeyCode.A) && target.localScale.x == -5.57f)
+        {
+            animation.SetBool("Push", true);
+        }
+        if (isPushing == false || Input.GetKeyUp(KeyCode.A))
+        {
+            animation.SetBool("Push", false);
+        }
     }
 
     private void OnDrawGizmos()
