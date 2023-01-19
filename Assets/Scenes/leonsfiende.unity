@@ -438,6 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6378df14f2148741b0a214da1215beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  door: {fileID: 0}
 --- !u!61 &208926094
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1683,6 +1684,7 @@ MonoBehaviour:
   healthAmount: 100
   grave1: {fileID: 0}
   grave2: {fileID: 0}
+  deathsound: {fileID: 0}
 --- !u!1 &915626198
 GameObject:
   m_ObjectHideFlags: 0
@@ -2609,6 +2611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6378df14f2148741b0a214da1215beb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  door: {fileID: 0}
 --- !u!61 &2058524218
 BoxCollider2D:
   m_ObjectHideFlags: 0
