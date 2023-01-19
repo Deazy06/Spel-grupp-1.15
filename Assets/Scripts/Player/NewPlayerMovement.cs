@@ -14,10 +14,12 @@ public class NewPlayerMovement : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
+    PlayerPushing pushing;
 
     private void Start()
     {
         animation = GetComponent<Animator>();
+        pushing = GetComponent<PlayerPushing>();
     }
     void Update()
     {
@@ -98,7 +100,7 @@ public class NewPlayerMovement : MonoBehaviour
 
     private void Flip()
     {
-        if (isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f)
+        if ((isFacingRight && horizontal < 0f || !isFacingRight && horizontal > 0f) && pushing.isPushing == false)
         {
             isFacingRight = !isFacingRight;
             Vector3 localScale = transform.localScale;

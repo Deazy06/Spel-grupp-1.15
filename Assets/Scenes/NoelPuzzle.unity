@@ -317,7 +317,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &16216712
@@ -997,7 +997,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &162262677
@@ -1149,7 +1149,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &181610034
@@ -1296,7 +1296,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &215471800
@@ -1601,7 +1601,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &312420339
@@ -1745,7 +1745,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &327802897
@@ -3161,7 +3161,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &783731780
@@ -5660,7 +5660,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1516137493
@@ -6410,7 +6410,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1776155622
@@ -6784,6 +6784,7 @@ MonoBehaviour:
   boss: {fileID: 1816831335}
   player: {fileID: 365243301}
   box: {fileID: 7195242825020999192, guid: 5f6a84fd6153a314a94daf86a980486a, type: 3}
+  macka: {fileID: 2946142737166213732, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
   randomizer: 0
   bossaudio: {fileID: 1825716216}
 --- !u!61 &1825716214
@@ -7247,7 +7248,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1863580172
@@ -7702,60 +7703,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 80cde243b48f2624480a30be7738559c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &2946142736566962201
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2946142737166213732, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_Name
-      value: Macka
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_RootOrder
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -98.83
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2946142737166213785, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f75c3bb8cfd42104798dac5f1df3cc81, type: 3}

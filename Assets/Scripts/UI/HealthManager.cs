@@ -6,9 +6,13 @@ public class HealthManager : MonoBehaviour
 {
 
     public Image healthBar;
+    Collider2D collid;
+    Rigidbody2D rg;
     public float healthAmount = 100f;
     SpriteRenderer sprite;
     Vector3 respawnPoint;
+    public GameObject grave1;
+    public GameObject grave2;
 
 
     // Start is called before the first frame update
@@ -17,7 +21,8 @@ public class HealthManager : MonoBehaviour
         respawnPoint = transform.position;
 
         sprite = GetComponent<SpriteRenderer>();
-        GetComponent<Collider2D>();
+        collid = GetComponent<Collider2D>();
+        rg = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -27,12 +32,12 @@ public class HealthManager : MonoBehaviour
         {
             //Application.LoadLevel(Application.loadedLevel);
             GameObject.Find("Player").GetComponent<NewPlayerMovement>().enabled = false;
+            sprite.color = new Color(0, 0, 0, 0);
+            grave1.SetActive(true);
+            grave2.SetActive(true);
             if (Input.GetKeyDown(KeyCode.R))
             {
                 PlayerRespawn();
-                Heal(100);
-                sprite.color = new Color(1, 1, 1, 1);
-                
             }
         }
         
@@ -105,10 +110,13 @@ public class HealthManager : MonoBehaviour
     }
     private void PlayerRespawn()
     {
+        grave1.SetActive(false);
+        grave2.SetActive(false);
+        sprite.color = new Color(1, 1, 1, 1);
         healthAmount = 100f;
-        transform.position = new Vector3(0, 0, 0);
+        Heal(100);
         transform.position = respawnPoint;
         GetComponent<NewPlayerMovement>().enabled = true;
-        sprite.color = new Color(0,(100 - healthAmount)/100,0,1);
     }
+    
 }

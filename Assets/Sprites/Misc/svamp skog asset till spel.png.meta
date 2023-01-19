@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 64b36dd349937d14ab247f72a823cae5
+guid: b0ba22a5110144e46a3929578a8b9b4b
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -101,41 +101,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_0"
+      name: svamp skog asset till spel_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 314b1c074cf6f29428378f6cd3b7f593
-      internalID: -1441324116
+      spriteID: 5210e2f2c20782d4b83cae0075654637
+      internalID: 9898541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_1"
+      name: svamp skog asset till spel_1
       rect:
         serializedVersion: 2
-        x: 368
+        x: 50
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 179b1817eacce3b4cb73903958908023
-      internalID: -372114998
+      spriteID: 96bb0e3950e7eed42ab19bae7625176e
+      internalID: 2027770349
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_2"
+      name: svamp skog asset till spel_2
       rect:
         serializedVersion: 2
-        x: 736
+        x: 100
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1219fe6e868c5a4ea9349a50c37f061
-      internalID: -260402738
+      spriteID: 784256375218237448c2953944c79a7b
+      internalID: -2053103298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_3"
+      name: svamp skog asset till spel_3
       rect:
         serializedVersion: 2
-        x: 1104
+        x: 150
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +182,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bdb2c410c27cc1d4d9b980d426a486b1
-      internalID: 62550752
+      spriteID: 0fad1a7df2a26474d8fa8f938d7811bc
+      internalID: -1755751458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_4"
+      name: svamp skog asset till spel_4
       rect:
         serializedVersion: 2
-        x: 1472
+        x: 200
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +203,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5634032549029a34ea948fa3de0f3f9b
-      internalID: -1012599170
+      spriteID: 24a35d656ed9c5c47bbd17e9c344836e
+      internalID: -1634137533
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_5"
+      name: svamp skog asset till spel_5
       rect:
         serializedVersion: 2
-        x: 1840
+        x: 250
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +224,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf21a4a944c3134dbf8da221964744f
-      internalID: 1641623281
+      spriteID: f9b89d6b604b2374cb8545e1db515088
+      internalID: 380014068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_6"
+      name: svamp skog asset till spel_6
       rect:
         serializedVersion: 2
-        x: 2208
+        x: 300
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,20 +245,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ddbe31b762743a4e931cab8b42d0102
-      internalID: -1115775107
+      spriteID: 6c6bf808d3acef44a8d0548202dbb672
+      internalID: -1431804071
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_7"
+      name: svamp skog asset till spel_7
       rect:
         serializedVersion: 2
-        x: 2576
+        x: 350
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf9f75df98152054b87877f355e40e7b
-      internalID: 614131287
+      spriteID: ca87ebf0e16a01140b114f78896bebe5
+      internalID: -575419750
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_8"
+      name: svamp skog asset till spel_8
       rect:
         serializedVersion: 2
-        x: 2944
+        x: 400
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,20 +287,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e33845c3d500d447a2f8a7f346bac3f
-      internalID: 1507418831
+      spriteID: 444957af6c7331b49be7016e09ce28c9
+      internalID: -1501601529
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_9"
+      name: svamp skog asset till spel_9
       rect:
         serializedVersion: 2
-        x: 3312
+        x: 450
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,20 +308,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9e454f5565a3abc478ae6bb136ea4173
-      internalID: 1146494147
+      spriteID: 5da0fd3d40b0dcc4b9b9462ff491a4f5
+      internalID: 507226765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_10"
+      name: svamp skog asset till spel_10
       rect:
         serializedVersion: 2
-        x: 3680
+        x: 500
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -353,20 +329,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 497864731ab05444da34f9a16e2ee994
-      internalID: -815732294
+      spriteID: 8cd6d64b67bee1941a394097c6110b23
+      internalID: 1935785175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_11"
+      name: svamp skog asset till spel_11
       rect:
         serializedVersion: 2
-        x: 4048
+        x: 550
         y: 0
-        width: 368.57144
-        height: 256
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -374,50 +350,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b7f2f8ebdf4e8a40982bafaf18e9046
-      internalID: 1659789345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_12"
-      rect:
-        serializedVersion: 2
-        x: 4416
-        y: 0
-        width: 368.57144
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 87423ec1ac0d5d44699c2e2001ae00c3
-      internalID: -1269244644
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "l\xF6vfall asset skog-Sheet_13"
-      rect:
-        serializedVersion: 2
-        x: 4784
-        y: 0
-        width: 368.57144
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc4481a2eacb0b34eb9207d8819a2e7f
-      internalID: -2031618769
+      spriteID: 2fa73fe3a1e2b8e4b9b53f9adb623506
+      internalID: 1082053938
       vertices: []
       indices: 
       edges: []
@@ -433,20 +367,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "l\xF6vfall asset skog-Sheet_13": -2031618769
-      "l\xF6vfall asset skog-Sheet_0": -1441324116
-      "l\xF6vfall asset skog-Sheet_6": -1115775107
-      "l\xF6vfall asset skog-Sheet_9": 1146494147
-      "l\xF6vfall asset skog-Sheet_3": 62550752
-      "l\xF6vfall asset skog-Sheet_10": -815732294
-      "l\xF6vfall asset skog-Sheet_12": -1269244644
-      "l\xF6vfall asset skog-Sheet_2": -260402738
-      "l\xF6vfall asset skog-Sheet_1": -372114998
-      "l\xF6vfall asset skog-Sheet_7": 614131287
-      "l\xF6vfall asset skog-Sheet_8": 1507418831
-      "l\xF6vfall asset skog-Sheet_11": 1659789345
-      "l\xF6vfall asset skog-Sheet_4": -1012599170
-      "l\xF6vfall asset skog-Sheet_5": 1641623281
+      svamp skog asset till spel_10: 1935785175
+      svamp skog asset till spel_1: 2027770349
+      svamp skog asset till spel_7: -575419750
+      svamp skog asset till spel_0: 9898541
+      svamp skog asset till spel_8: -1501601529
+      svamp skog asset till spel_2: -2053103298
+      svamp skog asset till spel_11: 1082053938
+      svamp skog asset till spel_5: 380014068
+      svamp skog asset till spel_9: 507226765
+      svamp skog asset till spel_6: -1431804071
+      svamp skog asset till spel_3: -1755751458
+      svamp skog asset till spel_4: -1634137533
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
