@@ -42,7 +42,7 @@ public class PlayerPushing : MonoBehaviour
         {
             animation.SetBool("Pull", true);
         }
-        if (Input.GetKeyUp(KeyCode.F) || Input.GetKeyUp(KeyCode.A))
+        if (isPushing == false || Input.GetKeyUp(KeyCode.A))
         {
             animation.SetBool("Pull", false);
         }
