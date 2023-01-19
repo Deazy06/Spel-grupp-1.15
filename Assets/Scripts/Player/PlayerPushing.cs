@@ -4,17 +4,18 @@ using UnityEngine;
 
 public class PlayerPushing : MonoBehaviour
 {
-
+    private Animator animation;
     public float distance = 1f;
     public LayerMask boxMask;
     public bool isPushing;
 
     GameObject box;
+    [SerializeField] private Transform target;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        animation = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -36,6 +37,14 @@ public class PlayerPushing : MonoBehaviour
             isPushing = false;
             box.GetComponent<FixedJoint2D>().enabled = false;
             box.GetComponent<BoxPulling>().beingPushed = false;
+        }
+        if (isPushing && Input.GetKeyDown(KeyCode.A) && target.localScale.x == 5.57f)
+        {
+            animation.SetBool("Pull", true);
+        }
+        if (Input.GetKeyUp(KeyCode.F) || Input.GetKeyUp(KeyCode.A))
+        {
+            animation.SetBool("Pull", false);
         }
     }
 
