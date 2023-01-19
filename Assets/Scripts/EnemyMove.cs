@@ -34,6 +34,7 @@ public class EnemyMove : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        print("collide");
         if (rightmove == true)
         {
             rightmove = false;
