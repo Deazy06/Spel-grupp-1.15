@@ -11,14 +11,22 @@ public class audiofile : MonoBehaviour
     {
         collide = GetComponent<Collider2D>();
     }
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (other.tag == "Player" && !audioSource.isPlaying) ;
+        if (collide.tag == "Player" && !audioSource.isPlaying);
         {
             audioSource.Play();
             collide.enabled = false;
         }
+        if (collide.tag == "Player" && audioSource.isPlaying);
+        {
+            audioSource.Stop();
+            collide.enabled = false;
+            print("slut");
+        }
+
     }
+    
 }
 
  

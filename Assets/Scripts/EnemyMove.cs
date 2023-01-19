@@ -27,7 +27,7 @@ public class EnemyMove : MonoBehaviour
         }
         else
         {
-            transform.position += new Vector3(-2f, 0, 0) * Time.deltaTime;
+            transform.position += new Vector3(2f, 0, 0) * Time.deltaTime;
             animation.SetFloat("xSpeed", -2);
             sr.flipX = true;
         }
