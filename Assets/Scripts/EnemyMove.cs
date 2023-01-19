@@ -35,14 +35,18 @@ public class EnemyMove : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (rightmove == true)
+        if (collision.gameObject.tag == "Wall")
         {
-            rightmove = false;
+            if (rightmove == true)
+            {
+                rightmove = false;
+            }
+            else
+            {
+                rightmove = true;
+            }
         }
-        else
-        {
-            rightmove = true;
-        }
+        
     }
 
     IEnumerator IdleAnim()
