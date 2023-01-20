@@ -10,6 +10,7 @@ public class BossLogic : MonoBehaviour
     [SerializeField] GameObject player;
     [SerializeField] GameObject box;
     [SerializeField] GameObject macka;
+    [SerializeField] GameObject laser;
     [SerializeField] SpriteRenderer deathCheck;
     [SerializeField] int randomizer;
     Collider2D collide;
@@ -24,21 +25,16 @@ public class BossLogic : MonoBehaviour
     {
         collide = GetComponent<Collider2D>();
         location = GameObject.Find("SpawnLocation");
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            Randomize();
-        }
         if (start == true)
         {
             timer += 1 * Time.deltaTime;
-            if (timer >= 3)
+            if (timer >= 2)
             {
                 timer = 0;
                 Randomize();
@@ -48,18 +44,18 @@ public class BossLogic : MonoBehaviour
             {
                 timer1 = 0;
                 deathTimer += 1;
-                if (deathTimer == 20)
+                if (deathTimer == 25)
                 {
-                    
+
                     Instantiate(box, location.transform.position + new Vector3(3.5f, 0, 0), transform.rotation);
                 }
-                else if (deathTimer == 21)
+                else if (deathTimer == 26)
                 {
                     timer = 0;
                     deathTimer = 0;
                     bossaudio.Stop();
                     start = false;
-                    
+
                 }
 
 
@@ -88,17 +84,13 @@ public class BossLogic : MonoBehaviour
             bossaudio.Play();
             Randomize();
         }
-        
 
-    }  
+
+    }
     private void Restart()
     {
         start = false;
         start = true;
-    }
-    private void BossDeath()
-    {
-        Instantiate(box, location.transform.position + new Vector3(2, 0, 0), transform.rotation);
     }
     private void Randomize()
     {
@@ -107,13 +99,14 @@ public class BossLogic : MonoBehaviour
         {
             print("1");
             Instantiate(macka, location.transform.position + new Vector3(Random.Range(0, -11), 0, 0), transform.rotation);
-
+            Laser();
         }
         else if (randomizer == 2)
         {
             print("2");
             player = GameObject.Find("Player");
-            Instantiate(box, player.transform.position + new Vector3(0,10,0), transform.rotation);
+            Instantiate(box, player.transform.position + new Vector3(0, 10, 0), transform.rotation);
+            Laser();
         }
         else if (randomizer == 3)
         {
@@ -121,8 +114,19 @@ public class BossLogic : MonoBehaviour
             for (int i = 0; i < 3; i++)
             {
                 Instantiate(box, location.transform.position + new Vector3(Random.Range(0, -11), 0, 0), transform.rotation);
+                Laser();
             }
-            
+
+
         }
+
     }
+    private void Laser()
+    {
+        Instantiate(laser, boss.transform.position + new Vector3(-3, 0, 0), transform.rotation);
+    }
+
+
+
+
 }
