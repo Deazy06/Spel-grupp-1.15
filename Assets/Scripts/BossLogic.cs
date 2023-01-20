@@ -123,7 +123,7 @@ public class BossLogic : MonoBehaviour
     }
     private void Laser()
     {
-        Instantiate(laser, boss.transform.position + new Vector3(-3, 0, 0), transform.rotation);
+        Instantiate(laser, boss.transform.position + new Vector3(0, 2.2f, 0), transform.rotation);
     }
 
 
