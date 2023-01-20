@@ -69,7 +69,7 @@ public class HealthManager : MonoBehaviour
         {
             Heal(10);
             Destroy(collision.gameObject);
-            sprite.color = new Color(healthAmount / 0, 100, 0, 1);
+            sprite.color = new Color(0,healthAmount / 100, 0, 1);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
