@@ -6,6 +6,7 @@ using UnityEngine;
 public class DoorTriggerButton : MonoBehaviour
 {
     [SerializeField] private DoorSetActive door;
+    [SerializeField] private DoorSetActive door2;
 
     [SerializeField] bool colorUse1 = true;
     [SerializeField] bool colorUse2 = true;
@@ -120,10 +121,12 @@ public class DoorTriggerButton : MonoBehaviour
         if (active1 == true && active2 == true && active3 == true) 
         {
             door.OpenDoor();
+            door2.OpenDoor();
         }
         else
         {
             door.CloseDoor();
+            door2.CloseDoor();
         }
         /*
 
