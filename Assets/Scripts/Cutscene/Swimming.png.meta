@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: d923d44b4b0ae7d479884f17c4c3eca5
+guid: c1a5bf4ae4bb75742bf21364e7d8c3b4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -67,7 +67,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 16384
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: under water klar-Sheet_0
+      name: Swimming_0
       rect:
         serializedVersion: 2
         x: 0
@@ -113,20 +113,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6013257a5739b724c86d56fc9edab53d
-      internalID: -1547090114
+      spriteID: 7f485fc232bdb24459bab50b7d86daff
+      internalID: -915057490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_1
+      name: Swimming_1
       rect:
         serializedVersion: 2
         x: 512
@@ -134,20 +134,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f363770cff1fe034480e84d00e530f71
-      internalID: -12303720
+      spriteID: b0b6eacbc3833e74197882e1329df8e6
+      internalID: -1000524051
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_2
+      name: Swimming_2
       rect:
         serializedVersion: 2
         x: 1024
@@ -155,20 +155,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95fb4a955e2645c43a1a6a52c9d3225a
-      internalID: -1451373317
+      spriteID: 72bb120e884331d43b40be044725aa7e
+      internalID: -425616288
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_3
+      name: Swimming_3
       rect:
         serializedVersion: 2
         x: 1536
@@ -176,20 +176,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e2143298fb1cce4da181eef4f053680
-      internalID: 1371521125
+      spriteID: 15f22667fa09562439eba931b112b144
+      internalID: -1126322978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_4
+      name: Swimming_4
       rect:
         serializedVersion: 2
         x: 2048
@@ -197,20 +197,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d86dc08c6176dc2489b870f0f6485367
-      internalID: -1039188672
+      spriteID: 54093d833522a7f428d55eeaa1eb3f65
+      internalID: 771356562
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_5
+      name: Swimming_5
       rect:
         serializedVersion: 2
         x: 2560
@@ -218,20 +218,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ce2f2733f1d1f145a312f76386aa907
-      internalID: -527519058
+      spriteID: 02b22e47201b4cb44b10204a9a88da8e
+      internalID: 501197215
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_6
+      name: Swimming_6
       rect:
         serializedVersion: 2
         x: 3072
@@ -239,20 +239,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 741db56658f481348b7579afa01fb9c3
-      internalID: -542884436
+      spriteID: 5e64701b23b36ba40aa05afe113dc5ba
+      internalID: -1985229446
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_7
+      name: Swimming_7
       rect:
         serializedVersion: 2
         x: 0
@@ -260,20 +260,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cbd507a6b1a11e448e4adab6f9129f4
-      internalID: -2072376823
+      spriteID: b8f0a3bf3eba2454e9f3aa92b4f796c4
+      internalID: -2015280591
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_8
+      name: Swimming_8
       rect:
         serializedVersion: 2
         x: 512
@@ -281,20 +281,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5fa65a6c2688a2c4abc843afbbc20220
-      internalID: 1159422930
+      spriteID: 3b29d3b2b22016e4bae1db0378f40856
+      internalID: 640481788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_9
+      name: Swimming_9
       rect:
         serializedVersion: 2
         x: 1024
@@ -302,20 +302,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 674806a33af3ad847834fccf0680d82a
-      internalID: -881268538
+      spriteID: f1d1b0b79fa395747a3036c6839c2dd7
+      internalID: -128439239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_10
+      name: Swimming_10
       rect:
         serializedVersion: 2
         x: 1536
@@ -323,20 +323,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48a615ffb80e44a4196245fbd33c4420
-      internalID: -1916915065
+      spriteID: b992e75dec8d312468bd5eb1a77d52e9
+      internalID: 504213605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_11
+      name: Swimming_11
       rect:
         serializedVersion: 2
         x: 2048
@@ -344,20 +344,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6f19fdc7fb9a7854a8219496fbc61c4e
-      internalID: -834508764
+      spriteID: 8ffa38434936eb74181da0aa553729bc
+      internalID: -2047385428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_12
+      name: Swimming_12
       rect:
         serializedVersion: 2
         x: 2560
@@ -365,20 +365,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf04e985b10674e44a866494cefba95d
-      internalID: 443271151
+      spriteID: 7c6e78f33eb046646982ffad6d5514ea
+      internalID: 1598751456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_13
+      name: Swimming_13
       rect:
         serializedVersion: 2
         x: 3072
@@ -386,20 +386,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42535fcf4e67eda49891a5addae7a776
-      internalID: -1813493368
+      spriteID: 5e76053076536394a901fe48028aa9ab
+      internalID: -1059813852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_14
+      name: Swimming_14
       rect:
         serializedVersion: 2
         x: 0
@@ -407,20 +407,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7419a85072861a64dafd8a07e7b7fc9b
-      internalID: -1755790381
+      spriteID: fd7777836fbee9a4a8cd7c9f7d30d3e0
+      internalID: -734883912
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_15
+      name: Swimming_15
       rect:
         serializedVersion: 2
         x: 512
@@ -428,20 +428,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0cefd29479135940a5808f761615bc2
-      internalID: 1217429625
+      spriteID: be073e26b75e77e4985cb24a73e846f2
+      internalID: -919049826
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_16
+      name: Swimming_16
       rect:
         serializedVersion: 2
         x: 1024
@@ -449,20 +449,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22e8124403de04b4f8c02900dd6572f1
-      internalID: -1823005324
+      spriteID: bafa6d6d09981514a8ef65f38c519ce2
+      internalID: -1985938387
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_17
+      name: Swimming_17
       rect:
         serializedVersion: 2
         x: 1536
@@ -470,20 +470,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fe1c6a230a0a29b4e90f3007e51e3d0e
-      internalID: -1139379653
+      spriteID: 7482eb8b52417f046b9f7c7fdfe8c6b7
+      internalID: -1253496659
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_18
+      name: Swimming_18
       rect:
         serializedVersion: 2
         x: 2048
@@ -491,20 +491,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f394468d9098a61439fba7437051bc01
-      internalID: 108752362
+      spriteID: 268e45023f8accf4eb612a21c9c95c3b
+      internalID: 1001043667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_19
+      name: Swimming_19
       rect:
         serializedVersion: 2
         x: 2560
@@ -512,20 +512,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ad32aeee97be7a4bb70afd51db4e680
-      internalID: -1067930320
+      spriteID: 1d0f7134513e1cc42a957627361f9118
+      internalID: 897728033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_20
+      name: Swimming_20
       rect:
         serializedVersion: 2
         x: 3072
@@ -533,20 +533,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b7bca6d181cb8843b1327f7da2fa1b0
-      internalID: 456207265
+      spriteID: 4c391cd5411e3f64fa22198068392482
+      internalID: -175925627
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_21
+      name: Swimming_21
       rect:
         serializedVersion: 2
         x: 0
@@ -554,20 +554,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9371671ccbdcf1049845ca4d63b3a42f
-      internalID: 1662601130
+      spriteID: e2b91361285659a4797d835e044fe199
+      internalID: -223122185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_22
+      name: Swimming_22
       rect:
         serializedVersion: 2
         x: 512
@@ -575,20 +575,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a263ab9f008f914bad3ce91d1a3c080
-      internalID: -746130119
+      spriteID: 0557a5f342fa0434b8bb6d2a5aed6875
+      internalID: -1933345978
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_23
+      name: Swimming_23
       rect:
         serializedVersion: 2
         x: 1024
@@ -596,20 +596,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d2af51edb7f949469a66d25ed86e7cc
-      internalID: 92087414
+      spriteID: 48fa19de764c2f840b376a355b1362c5
+      internalID: -939105298
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_24
+      name: Swimming_24
       rect:
         serializedVersion: 2
         x: 1536
@@ -617,20 +617,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e90d9c66535f50c4494bc989d2c0487f
-      internalID: -238873078
+      spriteID: 330b5be6ca4d1ea4aa2f4863ccd4f8e5
+      internalID: -1081659363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_25
+      name: Swimming_25
       rect:
         serializedVersion: 2
         x: 2048
@@ -638,20 +638,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43a04c05f4d72f34c889fddaa939ed84
-      internalID: 1152178333
+      spriteID: bb2c09da591e11f4c9acc378eca263a0
+      internalID: 471908136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_26
+      name: Swimming_26
       rect:
         serializedVersion: 2
         x: 2560
@@ -659,20 +659,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea0ec56e925561c41a0865e5e235e65e
-      internalID: -1490608252
+      spriteID: d3f32320e841bf346a26810c02a4003d
+      internalID: -2140035063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_27
+      name: Swimming_27
       rect:
         serializedVersion: 2
         x: 3072
@@ -680,20 +680,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 152fce9a444814e4daf4df96581fdc40
-      internalID: -1061312627
+      spriteID: 941f58ef34a60a042bda913c95a640d8
+      internalID: 2087303813
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_28
+      name: Swimming_28
       rect:
         serializedVersion: 2
         x: 0
@@ -701,20 +701,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16a6f6eb876a5974d826b80e5c7e402f
-      internalID: -1992804183
+      spriteID: 6dbec72c8bfc6ed46a5e8dd7964d44b8
+      internalID: 63725697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_29
+      name: Swimming_29
       rect:
         serializedVersion: 2
         x: 512
@@ -722,20 +722,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c667464aedba4041923de165c5716f7
-      internalID: -148443510
+      spriteID: a53a847a5ab372a499333c92766ddba2
+      internalID: -88875827
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_30
+      name: Swimming_30
       rect:
         serializedVersion: 2
         x: 1024
@@ -743,20 +743,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a34320f6c0058d4992ad5c9dbdf7e7f
-      internalID: -1488629602
+      spriteID: a7cced8bb9512a147b651e26afded69c
+      internalID: 1095086784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_31
+      name: Swimming_31
       rect:
         serializedVersion: 2
         x: 1536
@@ -764,20 +764,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35d13d8eea5b21c48a886192cea5d11d
-      internalID: 1397846501
+      spriteID: 19a7aee5286b0824c8b6b446f9731095
+      internalID: -1926610356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_32
+      name: Swimming_32
       rect:
         serializedVersion: 2
         x: 2048
@@ -785,20 +785,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3655a6928e3c7864bbb206d202381475
-      internalID: 1319325336
+      spriteID: 55283a11e7686ae418b2b1a8a87d8d63
+      internalID: -96499472
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_33
+      name: Swimming_33
       rect:
         serializedVersion: 2
         x: 2560
@@ -806,20 +806,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97f287388c23cfc4ea053d909d1b919f
-      internalID: -769162718
+      spriteID: c5364b96a3b65eb4d81089915dfe43d0
+      internalID: -1861398622
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_34
+      name: Swimming_34
       rect:
         serializedVersion: 2
         x: 3072
@@ -827,20 +827,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a16dc22bf3dff354cbd13c9a339985d8
-      internalID: 774672514
+      spriteID: 71ed545bcdeec6540907be28caa24047
+      internalID: -379217293
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_35
+      name: Swimming_35
       rect:
         serializedVersion: 2
         x: 0
@@ -848,20 +848,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a1774cf3612adef448b7cbde12190f89
-      internalID: -273343471
+      spriteID: 40c2d7fd7ebb2534e88ab31fb677b545
+      internalID: -628005490
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_36
+      name: Swimming_36
       rect:
         serializedVersion: 2
         x: 512
@@ -869,20 +869,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9b877222ba102745be58fe194e80ddb
-      internalID: -1717752335
+      spriteID: b54515508b338634f8ad1178ca202fb9
+      internalID: -1145887928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_37
+      name: Swimming_37
       rect:
         serializedVersion: 2
         x: 1024
@@ -890,20 +890,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e5265b285fa57cd4cbd81c1ca4f08853
-      internalID: 148175205
+      spriteID: 7b45c15f7924dca488e9c7b3a4304ce9
+      internalID: -1690173538
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_38
+      name: Swimming_38
       rect:
         serializedVersion: 2
         x: 1536
@@ -911,20 +911,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a398789cf02a47d488b45a8099e107e6
-      internalID: 720689540
+      spriteID: b0f5c4469ba624e47b04ab3134ff9cdb
+      internalID: 38329142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_39
+      name: Swimming_39
       rect:
         serializedVersion: 2
         x: 2048
@@ -932,20 +932,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db609ed7fbf1d8441b2f2e2262aba18a
-      internalID: -405428491
+      spriteID: 7315c9626d16b3e429946f632fda64fa
+      internalID: -825188707
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_40
+      name: Swimming_40
       rect:
         serializedVersion: 2
         x: 2560
@@ -953,20 +953,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a65a75f0f10b7d949b8876eb363e534c
-      internalID: -1894308477
+      spriteID: 01204a54e29c9184cbba98bde6517f90
+      internalID: -1954805764
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_41
+      name: Swimming_41
       rect:
         serializedVersion: 2
         x: 3072
@@ -974,20 +974,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee8e88e537c5504aa3f8b820fb1034e
-      internalID: -560467116
+      spriteID: a4a7f2823e4f9a843a9fd114a11afb0c
+      internalID: -769462484
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_42
+      name: Swimming_42
       rect:
         serializedVersion: 2
         x: 0
@@ -995,20 +995,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8bf942aa687b4684dbd78d551f8a3fb6
-      internalID: 867619790
+      spriteID: 78b3875cd4887ba4b8d9c9cd98297440
+      internalID: 900976792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_43
+      name: Swimming_43
       rect:
         serializedVersion: 2
         x: 512
@@ -1016,20 +1016,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b2cace5a6ecbc4f4eb618cc7af3179f9
-      internalID: -1860140171
+      spriteID: 4a2ce02d61df23149b6d39fd9cdd9320
+      internalID: 1705337038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_44
+      name: Swimming_44
       rect:
         serializedVersion: 2
         x: 1024
@@ -1037,20 +1037,20 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9377070ffc76fbb46a7d3d8c5131488c
-      internalID: 1351782689
+      spriteID: 35d72c560534480419590d73f2595196
+      internalID: -405387891
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: under water klar-Sheet_45
+      name: Swimming_45
       rect:
         serializedVersion: 2
         x: 1536
@@ -1058,35 +1058,14 @@ TextureImporter:
         width: 512
         height: 256
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffa75f57b4264af48ba413b960a45649
-      internalID: 1618432486
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: under water klar-Sheet_46
-      rect:
-        serializedVersion: 2
-        x: 2048
-        y: 0
-        width: 512
-        height: 256
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0cff8ac33c655246ba1e95cc1db0465
-      internalID: 214588782
+      spriteID: 128757551869b69478d3a24ee1317a87
+      internalID: 872698465
       vertices: []
       indices: 
       edges: []
@@ -1102,53 +1081,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      under water klar-Sheet_29: -148443510
-      under water klar-Sheet_38: 720689540
-      under water klar-Sheet_13: -1813493368
-      under water klar-Sheet_37: 148175205
-      under water klar-Sheet_19: -1067930320
-      under water klar-Sheet_0: -1547090114
-      under water klar-Sheet_7: -2072376823
-      under water klar-Sheet_26: -1490608252
-      under water klar-Sheet_36: -1717752335
-      under water klar-Sheet_8: 1159422930
-      under water klar-Sheet_45: 1618432486
-      under water klar-Sheet_12: 443271151
-      under water klar-Sheet_17: -1139379653
-      under water klar-Sheet_4: -1039188672
-      under water klar-Sheet_34: 774672514
-      under water klar-Sheet_46: 214588782
-      under water klar-Sheet_28: -1992804183
-      under water klar-Sheet_23: 92087414
-      under water klar-Sheet_35: -273343471
-      under water klar-Sheet_20: 456207265
-      under water klar-Sheet_32: 1319325336
-      under water klar-Sheet_14: -1755790381
-      under water klar-Sheet_43: -1860140171
-      under water klar-Sheet_27: -1061312627
-      under water klar-Sheet_3: 1371521125
-      under water klar-Sheet_42: 867619790
-      under water klar-Sheet_31: 1397846501
-      under water klar-Sheet_15: 1217429625
-      under water klar-Sheet_39: -405428491
-      under water klar-Sheet_30: -1488629602
-      under water klar-Sheet_6: -542884436
-      under water klar-Sheet_9: -881268538
-      under water klar-Sheet_33: -769162718
-      under water klar-Sheet_22: -746130119
-      under water klar-Sheet_16: -1823005324
-      under water klar-Sheet_24: -238873078
-      under water klar-Sheet_41: -560467116
-      under water klar-Sheet_10: -1916915065
-      under water klar-Sheet_11: -834508764
-      under water klar-Sheet_44: 1351782689
-      under water klar-Sheet_5: -527519058
-      under water klar-Sheet_40: -1894308477
-      under water klar-Sheet_18: 108752362
-      under water klar-Sheet_2: -1451373317
-      under water klar-Sheet_25: 1152178333
-      under water klar-Sheet_1: -12303720
-      under water klar-Sheet_21: 1662601130
+      Swimming_28: 63725697
+      Swimming_35: -628005490
+      Swimming_44: -405387891
+      Swimming_30: 1095086784
+      Swimming_25: 471908136
+      Swimming_24: -1081659363
+      Swimming_38: 38329142
+      Swimming_4: 771356562
+      Swimming_31: -1926610356
+      Swimming_42: 900976792
+      Swimming_41: -769462484
+      Swimming_13: -1059813852
+      Swimming_29: -88875827
+      Swimming_23: -939105298
+      Swimming_3: -1126322978
+      Swimming_39: -825188707
+      Swimming_11: -2047385428
+      Swimming_43: 1705337038
+      Swimming_19: 897728033
+      Swimming_7: -2015280591
+      Swimming_21: -223122185
+      Swimming_2: -425616288
+      Swimming_12: 1598751456
+      Swimming_40: -1954805764
+      Swimming_1: -1000524051
+      Swimming_17: -1253496659
+      Swimming_33: -1861398622
+      Swimming_9: -128439239
+      Swimming_0: -915057490
+      Swimming_15: -919049826
+      Swimming_22: -1933345978
+      Swimming_34: -379217293
+      Swimming_36: -1145887928
+      Swimming_16: -1985938387
+      Swimming_20: -175925627
+      Swimming_32: -96499472
+      Swimming_8: 640481788
+      Swimming_45: 872698465
+      Swimming_37: -1690173538
+      Swimming_5: 501197215
+      Swimming_18: 1001043667
+      Swimming_26: -2140035063
+      Swimming_27: 2087303813
+      Swimming_10: 504213605
+      Swimming_6: -1985229446
+      Swimming_14: -734883912
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
