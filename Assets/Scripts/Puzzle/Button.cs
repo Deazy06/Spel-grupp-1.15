@@ -40,7 +40,7 @@ public class Button : MonoBehaviour
         {
             print("ACtive");
             playerTrigger = true;
-            FindObjectOfType<DoorSetActive>().OpenDoor();
+
         }
         if (collision.gameObject.CompareTag("Box") && gameObject.CompareTag("Inactive"))
         {
@@ -55,7 +55,7 @@ public class Button : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerTrigger = false;
-            FindObjectOfType<DoorSetActive>().CloseDoor();
+
 
         }
         if (collision.gameObject.CompareTag("Box"))

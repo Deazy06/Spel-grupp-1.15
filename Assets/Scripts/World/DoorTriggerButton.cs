@@ -125,7 +125,7 @@ public class DoorTriggerButton : MonoBehaviour
         }
         else
         {
-            //door.CloseDoor(); // kommer  mörda den som satte den där
+            door.CloseDoor(); // kommer  mörda den som satte den där
             
         }
         /*
