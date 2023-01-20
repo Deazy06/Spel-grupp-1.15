@@ -2883,6 +2883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab46f2856e75b74aa4708107af77847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trigger: 0
   door: {fileID: 741286601}
 --- !u!114 &502485878
 MonoBehaviour:
@@ -5528,6 +5529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab46f2856e75b74aa4708107af77847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trigger: 0
   door: {fileID: 2044906873}
 --- !u!114 &999530560
 MonoBehaviour:
@@ -6434,6 +6436,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab46f2856e75b74aa4708107af77847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trigger: 0
   door: {fileID: 736398007}
 --- !u!114 &1173582303
 MonoBehaviour:
@@ -8278,6 +8281,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cab46f2856e75b74aa4708107af77847, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  trigger: 0
   door: {fileID: 714037527}
 --- !u!114 &1385029076
 MonoBehaviour:
@@ -8996,7 +9000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1926764198529771087, guid: 33deed2e36988484090edc9b22d4afd9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 131.05
+      value: 141.99
       objectReference: {fileID: 0}
     - target: {fileID: 1926764198529771087, guid: 33deed2e36988484090edc9b22d4afd9, type: 3}
       propertyPath: m_LocalPosition.y
@@ -9389,7 +9393,7 @@ GameObject:
   - component: {fileID: 1659080506}
   - component: {fileID: 1659080505}
   - component: {fileID: 1659080504}
-  - component: {fileID: 1659080503}
+  - component: {fileID: 1659080507}
   m_Layer: 0
   m_Name: Button Trigger (6)
   m_TagString: Inactive
@@ -9397,19 +9401,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1659080503
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1659080502}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e541826bb1b3b744db6b5e51572079a4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 1001074731}
 --- !u!70 &1659080504
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -9494,6 +9485,19 @@ Transform:
   m_Father: {fileID: 1441450786}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1659080507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1659080502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51ee31e4775d2ff4fa52490251eeed4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 1001074731}
 --- !u!1 &1663223779
 GameObject:
   m_ObjectHideFlags: 0
