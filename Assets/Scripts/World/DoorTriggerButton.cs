@@ -121,12 +121,12 @@ public class DoorTriggerButton : MonoBehaviour
         if (active1 == true && active2 == true && active3 == true) 
         {
             door.OpenDoor();
-            door2.OpenDoor();
+            
         }
         else
         {
-            door.CloseDoor();
-            door2.CloseDoor();
+            //door.CloseDoor(); // kommer  mörda den som satte den där
+            
         }
         /*
 
