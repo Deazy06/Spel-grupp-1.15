@@ -55,7 +55,6 @@ public class BossLogic : MonoBehaviour
                 }
                 else if (deathTimer == 21)
                 {
-                    Destroy(boss);
                     timer = 0;
                     deathTimer = 0;
                     bossaudio.Stop();
