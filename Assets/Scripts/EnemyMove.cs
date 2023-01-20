@@ -8,8 +8,8 @@ public class EnemyMove : MonoBehaviour
     public bool rightmove = true;
     private Animator animation;
     private SpriteRenderer sr;
-    private bool canMove = true; // new variable to control movement
-    private bool isIdling = false; // new variable to check if IdleAnim coroutine is running
+    private bool canMove = true; 
+    private bool isIdling = false; 
 
     // Start is called before the first frame update
     void Start()
@@ -51,19 +51,19 @@ public class EnemyMove : MonoBehaviour
         }
     }
 
-    IEnumerator IdleAnim()
+    IEnumerator IdleAnim() // Random idle anim 1.5f seconds
     {
-        isIdling = true; // set isIdling to true before starting the coroutine
-        canMove = false; // set canMove to false before starting the coroutine
+        isIdling = true; 
+        canMove = false; 
         animation.SetBool("Idle", true);
         yield return new WaitForSeconds(1.5f);
         animation.SetBool("Idle", false);
-        canMove = true; // set canMove to true when the coroutine is finished
-        isIdling = false; // set isIdling to false when the coroutine is finished
+        canMove = true; 
+        isIdling = false; 
     }
-    IEnumerator WaitRandom()
+    IEnumerator WaitRandom() // randomizer
     {
-        float waitTime = Random.Range(2.8f, 4.8f);
+        float waitTime = Random.Range(2.8f, 4.8f); //range
         yield return new WaitForSeconds(waitTime);
         Debug.Log("Coroutine finished after waiting for " + waitTime + " seconds.");
         StartCoroutine(IdleAnim());
