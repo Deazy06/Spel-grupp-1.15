@@ -7,6 +7,8 @@ public class Button : MonoBehaviour
     bool playerTrigger = false;
     bool objTrigger = false;
     [SerializeField] SpriteRenderer sprite;
+    [SerializeField] private DoorSetActive door;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,6 +23,7 @@ public class Button : MonoBehaviour
         {
             gameObject.tag = "Active";
             sprite.color = Color.white;
+
         }
         else
         {
@@ -37,6 +40,7 @@ public class Button : MonoBehaviour
         {
             print("ACtive");
             playerTrigger = true;
+            FindObjectOfType<DoorSetActive>().OpenDoor();
         }
         if (collision.gameObject.CompareTag("Box") && gameObject.CompareTag("Inactive"))
         {
@@ -51,6 +55,8 @@ public class Button : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             playerTrigger = false;
+            FindObjectOfType<DoorSetActive>().CloseDoor();
+
         }
         if (collision.gameObject.CompareTag("Box"))
         {

@@ -3,6 +3,7 @@ using UnityEngine;
 public class DoorSetActive : MonoBehaviour
 {
     public int open;
+    public int close;
     private Animator animation;
 
     public void Start()
@@ -13,6 +14,7 @@ public class DoorSetActive : MonoBehaviour
     //public AudioSource door;
     public void OpenDoor()
     {
+        print("open");
         if (open == 1)
         {
             GetComponent<Collider2D>().enabled = false;
@@ -30,7 +32,15 @@ public class DoorSetActive : MonoBehaviour
 
     public void CloseDoor()
     {
-        GetComponent<Collider2D>().enabled = true;
+        if (close == 1)
+        {
+            GetComponent<Collider2D>().enabled = true;
+        }
+        if (close == 3)
+        {
+            close = 2;
+        }
+        close += 1;
         animation.SetTrigger("DoorClose");
         //gameObject.SetActive(true);
     }
