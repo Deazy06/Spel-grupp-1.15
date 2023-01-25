@@ -20,11 +20,11 @@ public class EnemyMove : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() // Enemy movement Leon
     {
         if (canMove && !isIdling) // check if enemy can move and if IdleAnim is not running
         {
-            if (rightmove == true)
+            if (rightmove == true) // Fienden går höger tills den går in i ett object, då vänds kaaraktären plus att den går vänster
             {
                 transform.position += new Vector3(2f, 0, 0) * Time.deltaTime;
                 animation.SetFloat("xSpeed", 2);
@@ -51,6 +51,7 @@ public class EnemyMove : MonoBehaviour
         }
     }
 
+    // Randomzier och Animations Diyor
     IEnumerator IdleAnim() // Random idle anim 1.5f seconds
     {
         isIdling = true; 
