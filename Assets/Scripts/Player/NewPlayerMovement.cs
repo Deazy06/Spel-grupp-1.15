@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewPlayerMovement : MonoBehaviour
+public class NewPlayerMovement : MonoBehaviour // Diyor och Noel
 {
     private Animator animation;
 
@@ -23,12 +23,12 @@ public class NewPlayerMovement : MonoBehaviour
     }
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        horizontal = Input.GetAxisRaw("Horizontal"); // A D movement + anim
         
         animation.SetFloat("xSpeed", Mathf.Abs(horizontal));
         animation.SetFloat("ySpeed", rb.velocity.y);
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded()) // Jump + anim
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             animation.SetTrigger("Jumping");

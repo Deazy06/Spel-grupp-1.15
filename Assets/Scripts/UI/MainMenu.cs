@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MainMenu : MonoBehaviour
+public class MainMenu : MonoBehaviour // Fade animations för MainMenu
 {
     
     public GameObject targetObject;

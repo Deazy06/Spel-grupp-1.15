@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : MonoBehaviour // Fadear ut audion när man trycker på Play i MainMenu
 {
     private Animator animation;
 

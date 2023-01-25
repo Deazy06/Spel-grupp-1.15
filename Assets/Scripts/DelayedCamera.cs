@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DelayedCamera : MonoBehaviour
+public class DelayedCamera : MonoBehaviour // Diyor (Delen som är oaktiv var hittad på UnityForums men jag gjordeom den så att Y-axlen blev locked.)
 {
     private Vector3 offset = new Vector3(0f, 3.85f, -10f);
     public float smoothTime = 0.25f;

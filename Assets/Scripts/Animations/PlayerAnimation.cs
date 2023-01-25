@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerAnimation : MonoBehaviour
+public class PlayerAnimation : MonoBehaviour // Diyor Jumping Anim Activation trigger
 {
 
     private Animator animation;

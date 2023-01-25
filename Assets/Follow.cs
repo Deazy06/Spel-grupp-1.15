@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Follow : MonoBehaviour
+public class Follow : MonoBehaviour // Script för att HealthBar ska följa efter playern Diyor
 {
     private Vector3 offset = new Vector3(0f, 2.85f, 0f);
     public float smoothTime = 0.1f;

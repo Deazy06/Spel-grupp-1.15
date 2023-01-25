@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 
-public class FadeInUI : MonoBehaviour
+public class FadeInUI : MonoBehaviour // Används inte. Diyor
 {
     private Animator animation;
 
