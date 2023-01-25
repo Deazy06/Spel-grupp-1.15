@@ -15,7 +15,7 @@ public class ButtonOrder : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() // välj ordning på 4 triggers om det aktiveras i fel ordning blir alla inaktiva - Noel
     {
         if (trigger1.tag == "Active")
         {
