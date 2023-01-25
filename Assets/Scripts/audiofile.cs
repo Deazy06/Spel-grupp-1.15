@@ -6,8 +6,9 @@ public class audiofile : MonoBehaviour
 {
     Collider2D collide;
     public AudioSource audioSource;
+    // Music spelas vid rätt tillfälle - Leon
+    private void Start() // När spelaren går in i box trigger så börjar en musikfil spelas, när du går in i den andra så slutar det
 
-    private void Start()
     {
         collide = GetComponent<Collider2D>();
     }
