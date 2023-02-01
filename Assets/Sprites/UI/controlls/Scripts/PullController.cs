@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class PullController : MonoBehaviour
 {
-    private Animator animation;
-    private PlayerPushing playerScript;
+    public Animator animation;
+    public PlayerPushing playerScript;
     void Start()
     {
-        animation = GetComponent<Animator>();
+        //animation = GetComponent<Animator>();
         playerScript = GetComponent<PlayerPushing>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.F))
+        if (Input.GetKey(KeyCode.F) && playerScript.isPushing == true)
         {
             animation.SetBool("F", true);
         }

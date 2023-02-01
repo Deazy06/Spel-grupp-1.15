@@ -4294,6 +4294,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &779919904 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2153346954999141732, guid: a8609e3242e2acf41b5b60c82741d64a, type: 3}
+  m_PrefabInstance: {fileID: 2153346954952825851}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &790593943
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8889,6 +8894,31 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1533627671226009698, guid: 33deed2e36988484090edc9b22d4afd9, type: 3}
   m_PrefabInstance: {fileID: 1538270583}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1470055885 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6229298085299002284, guid: 33deed2e36988484090edc9b22d4afd9, type: 3}
+  m_PrefabInstance: {fileID: 1538270583}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470055884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b66b122a6a38c9c49a0fd1637db5b0eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1470055893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470055884}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47bb90d27f345044282862d9f4f93f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animation: {fileID: 779919904}
+  playerScript: {fileID: 1470055885}
 --- !u!1 &1473818784
 GameObject:
   m_ObjectHideFlags: 0
@@ -13096,6 +13126,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1000310619059258573, guid: a8609e3242e2acf41b5b60c82741d64a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2153346954999141723, guid: a8609e3242e2acf41b5b60c82741d64a, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2153346956820231800, guid: a8609e3242e2acf41b5b60c82741d64a, type: 3}
