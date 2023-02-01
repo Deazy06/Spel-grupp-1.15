@@ -36,13 +36,13 @@ public class Button : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
-        if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Inactive"))
+        if (collision.gameObject.CompareTag("Player") && gameObject.CompareTag("Inactive")) //Om ett objekt med tagen "player" nuddar ett objekt med tagen "inactive" så blir triggern på playern aktiv- Alex
         {
             print("ACtive");
             playerTrigger = true;
 
         }
-        if (collision.gameObject.CompareTag("Box") && gameObject.CompareTag("Inactive"))
+        if (collision.gameObject.CompareTag("Box") && gameObject.CompareTag("Inactive")) //Om samma sak händer här så blir även objektets trigger aktiv- Alex
         {
             print("ACtive");
             objTrigger = true;
@@ -52,13 +52,13 @@ public class Button : MonoBehaviour
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        if (collision.gameObject.CompareTag("Player")) //Om ett objekt nuddar ett annat objekt med tagen "player" så är triggern på playern inaktiv- Alex
         {
             playerTrigger = false;
 
 
         }
-        if (collision.gameObject.CompareTag("Box"))
+        if (collision.gameObject.CompareTag("Box")) //Om ett objekt nuddar ett annat objekt med tagen "box" så är triggern på objektet inaktiv- Alex
         {
             objTrigger = false;
         }

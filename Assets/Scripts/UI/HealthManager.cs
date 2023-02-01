@@ -45,12 +45,12 @@ public class HealthManager : MonoBehaviour
         }
         
         /*
-        if (Input.GetKeyDown(KeyCode.A)) //tar damage när man trycker ner den knappen (ska ändras till om man nuddar något)
+        if (Input.GetKeyDown(KeyCode.A)) //tar damage när man trycker ner den knappen (ska ändras till om man nuddar något)- alex
         {
             TakeDamage(20);
         }
 
-        if (Input.GetKeyDown(KeyCode.D)) // heakar när man trycker ner den knappen (ska ändras till om man äter/dricker något)
+        if (Input.GetKeyDown(KeyCode.D)) // healar när man trycker ner den knappen (ska ändras till om man äter/dricker något)- alex
         {
             Heal(5);
         }

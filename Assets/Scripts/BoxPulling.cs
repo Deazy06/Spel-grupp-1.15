@@ -11,19 +11,19 @@ public class BoxPulling : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        xPos = transform.position.x;
+        xPos = transform.position.x; //förflytta sig på x
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (beingPushed == false)
+        if (beingPushed == false) //om lådan inte blir knuffad
         {
-            transform.position = new Vector3(xPos, transform.position.y);
+            transform.position = new Vector3(xPos, transform.position.y); //förflyttas på y, andra hållet än x, dras alltså
         }
         else
         {
-            xPos = transform.position.x;
+            xPos = transform.position.x; //om inte (alltså blir knuffad), förflyttas på x
         }
 
     }
