@@ -65,10 +65,10 @@ public class HealthManager : MonoBehaviour
             TakeDamage(10);
             sprite.color = new Color(healthAmount / 100, 0, 0, 1);
         }
-        if (collision.gameObject.tag == "Food")
+        if (collision.gameObject.tag == "Food") // Få liv av macka + bli grön - Leon
         {
-            Heal(10);
-            Destroy(collision.gameObject);
+            Heal(10); // Få 10 + i liv när man går in/äter en macka, sen förstörs mackan, plus att man blir grön ett tag
+            Destroy(collision.gameObject); 
             sprite.color = new Color(0,healthAmount / 100, 0, 1);
         }
     }

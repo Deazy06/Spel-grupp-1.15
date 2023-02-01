@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurnOffPlayerWhileCutscene : MonoBehaviour
+public class TurnOffPlayerWhileCutscene : MonoBehaviour // Som den heter. Stänger av players movement script när cutscene scenen startar är igång.
 {
     
     void Start()

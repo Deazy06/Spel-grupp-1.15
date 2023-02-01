@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MainMenuAnim : MonoBehaviour
+public class MainMenuAnim : MonoBehaviour // Diyor Animations för maainMenu
 {
     private Animator animation;
     public void Start()

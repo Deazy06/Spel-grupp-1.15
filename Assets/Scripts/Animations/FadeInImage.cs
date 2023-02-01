@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FadeInImage : MonoBehaviour
+public class FadeInImage : MonoBehaviour //Diyor
 {
     private Animator animation;
 

@@ -29,7 +29,7 @@ public class ChangeToGame : MonoBehaviour
         Cutscene2.SetActive(false);
         Cutscene3.SetActive(true);
 
-        yield return new WaitForSeconds(3.840f);
+        yield return new WaitForSeconds(5.750f);
         SceneManager.LoadScene("NoelMain");
     }
 }

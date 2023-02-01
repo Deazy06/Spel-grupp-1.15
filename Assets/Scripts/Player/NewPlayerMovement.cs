@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class NewPlayerMovement : MonoBehaviour
+public class NewPlayerMovement : MonoBehaviour // Diyor och Noel
 {
     private Animator animation;
 
@@ -18,17 +18,17 @@ public class NewPlayerMovement : MonoBehaviour
 
     private void Start()
     {
-        animation = GetComponent<Animator>();
+        animation = GetComponent<Animator>(); 
         pushing = GetComponent<PlayerPushing>();
     }
     void Update()
     {
-        horizontal = Input.GetAxisRaw("Horizontal");
+        horizontal = Input.GetAxisRaw("Horizontal"); // A D movement + anim
         
         animation.SetFloat("xSpeed", Mathf.Abs(horizontal));
         animation.SetFloat("ySpeed", rb.velocity.y);
 
-        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded()) // Jump + anim
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             animation.SetTrigger("Jumping");
@@ -62,7 +62,7 @@ public class NewPlayerMovement : MonoBehaviour
 
         Flip(); // fixa ny script för flip för att drag pull gubben ska inte vända sig
 
-        if (climb == true && Input.GetKey(KeyCode.W))
+        if (climb == true && Input.GetKey(KeyCode.W)) // när spelaren kan klättra och trycker W så flyttas karaktären upp.
         {
             transform.position += new Vector3(0, 5f, 0) * Time.deltaTime;
             rb.AddForce(Vector3.up * 1400 * Time.deltaTime);
@@ -71,7 +71,8 @@ public class NewPlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Climb")
+        // vid collision med climb och distansen mellan objektet är mindre än 0,7 så kan spelaren klättra tills spelaren möter en till trigger- Noel
+        if (collision.gameObject.tag == "Climb") 
         {
             float distance = Vector3.Distance(transform.position, collision.transform.position);
             if (distance > 0.7f)

@@ -26,11 +26,11 @@ public class RobotDeath : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D collision) //vid collision av danger elle pushable så sqishas och efter 2 sek försvinner objektet - Noel
     {
         if (collision.gameObject.CompareTag("Danger")|| collision.gameObject.CompareTag("Pushable"))
         {
-            transform.localScale = new Vector3(5, 1, 1);
+            transform.localScale = new Vector3(5, 1, 1); 
             collid.enabled = false;
             start = true;
         }
