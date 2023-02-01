@@ -23,10 +23,6 @@ public class ButtonOrder : MonoBehaviour
             {
                 if (trigger3.tag == "Active")
                 {
-                    if (trigger4.tag == "Active")
-                    {
-                       
-                    }
                 }
                 else if (trigger4.tag == "Active")
                 {

@@ -13,15 +13,14 @@ public class ColorButton : MonoBehaviour
     {
         collide = GetComponent<Collider2D>();
         collide.enabled = false;
-        sprite = GetComponent<SpriteRenderer>(); //Gör lista av färger - Noel 
+        sprite = GetComponent<SpriteRenderer>(); //Gör lista av färger och använder sedan den första  - Noel 
         colorchoose = new List<Color>();
         colorchoose.Add(Color.blue);
         colorchoose.Add(Color.red);
         colorchoose.Add(Color.yellow);
         colorchoose.Add(Color.green);
-        colorchoose.Add(Color.black);
 
-        sprite.color = (Color.blue);
+        sprite.color = colorchoose[activeColor]; 
     }
 
     // Update is called once per frame  
