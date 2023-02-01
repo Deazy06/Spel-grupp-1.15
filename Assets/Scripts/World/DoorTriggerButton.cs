@@ -21,6 +21,7 @@ public class DoorTriggerButton : MonoBehaviour
     [SerializeField] GameObject chooseTrigger1;
     [SerializeField] GameObject chooseTrigger2;
     [SerializeField] GameObject chooseTrigger3;
+    [SerializeField] private AudioSource dooropen;
     private void Start()
     {
 
@@ -103,6 +104,8 @@ public class DoorTriggerButton : MonoBehaviour
         if (active1 == true && active2 == true && active3 == true)
         {
             door.OpenDoor();
+            dooropen.Play();
+
         }
         else
         {

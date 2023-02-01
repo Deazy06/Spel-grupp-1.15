@@ -15,6 +15,7 @@ public class NewPlayerMovement : MonoBehaviour // Diyor och Noel
     [SerializeField] private LayerMask groundLayer;
 
     PlayerPushing pushing;
+   
 
     private void Start()
     {
@@ -33,6 +34,8 @@ public class NewPlayerMovement : MonoBehaviour // Diyor och Noel
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
             animation.SetTrigger("Jumping");
             animation.SetTrigger("FallingStop");
+        
+
         }
 
         /*

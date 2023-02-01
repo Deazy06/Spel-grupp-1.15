@@ -5,6 +5,7 @@ public class DoorSetActive : MonoBehaviour
     public int open;
     public int close;
     private Animator animation;
+    [SerializeField] private AudioSource dooropen;
 
     public void Start()
     {
@@ -27,6 +28,7 @@ public class DoorSetActive : MonoBehaviour
         animation.SetTrigger("DoorOpen"); */
         gameObject.SetActive(false);
         //door.Play();
+        dooropen.Play();
     }
 
 

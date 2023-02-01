@@ -1927,6 +1927,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  hopp: {fileID: 365243310}
 --- !u!212 &365243308
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2240,7 +2241,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1088158392}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &428803917
 MonoBehaviour:
@@ -2268,7 +2269,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 779f89d48fef62f47a6fffacc159ed40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< Updated upstream
   door: {fileID: 1380817480}
+=======
+  door: {fileID: 0}
+>>>>>>> Stashed changes
   door2: {fileID: 0}
   colorUse1: 1
   colorUse2: 1
@@ -3106,6 +3111,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   open: 0
   close: 0
+<<<<<<< Updated upstream
+=======
+  dooropen: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!61 &779766864
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3596,6 +3605,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   open: 0
   close: 0
+<<<<<<< Updated upstream
+=======
+  dooropen: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!61 &873906089
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4635,7 +4648,6 @@ Transform:
   m_LocalScale: {x: 1.68642, y: 4.6113, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1380817483}
   - {fileID: 1089570609}
   - {fileID: 428803916}
   m_Father: {fileID: 0}
@@ -4674,6 +4686,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   open: 0
   close: 0
+<<<<<<< Updated upstream
+=======
+  dooropen: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!61 &1089570607
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4765,7 +4781,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1088158392}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1095050609
 GameObject:
@@ -4916,6 +4932,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   open: 0
   close: 0
+<<<<<<< Updated upstream
+=======
+  dooropen: {fileID: 1103351517}
+>>>>>>> Stashed changes
 --- !u!61 &1103351514
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5653,6 +5673,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 5.1823077}
   m_EdgeRadius: 0
+<<<<<<< Updated upstream
 --- !u!1 &1380817479
 GameObject:
   m_ObjectHideFlags: 0
@@ -5779,6 +5800,8 @@ Transform:
   m_Father: {fileID: 1088158392}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1403652879
 GameObject:
   m_ObjectHideFlags: 0
@@ -5812,6 +5835,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   open: 0
   close: 0
+<<<<<<< Updated upstream
+=======
+  dooropen: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!61 &1403652881
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6051,6 +6078,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   open: 0
   close: 0
+<<<<<<< Updated upstream
+=======
+  dooropen: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!61 &1517722128
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7275,6 +7306,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   open: 0
   close: 0
+<<<<<<< Updated upstream
+=======
+  dooropen: {fileID: 0}
+>>>>>>> Stashed changes
 --- !u!61 &1837841245
 BoxCollider2D:
   m_ObjectHideFlags: 0
