@@ -6,7 +6,7 @@ public class ProjectileDelete : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    public float life = 4.8f;
+    public float life = 6.8f;
 
     void Start()
     {

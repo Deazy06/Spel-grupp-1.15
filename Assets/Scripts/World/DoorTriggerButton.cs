@@ -8,9 +8,11 @@ public class DoorTriggerButton : MonoBehaviour
     [SerializeField] private DoorSetActive door;
     [SerializeField] private DoorSetActive door2;
 
-    bool active1;
-    bool active2;
-    bool active3;
+    public bool active1;
+    public bool active2;
+    public bool active3;
+
+    public bool stop = false;
 
     [SerializeField] Color chooseColor1;
     [SerializeField] Color chooseColor2;
@@ -101,7 +103,7 @@ public class DoorTriggerButton : MonoBehaviour
         }
 
 
-        if (active1 == true && active2 == true && active3 == true)
+        if (active1 == true && active2 == true && active3 == true && stop == false)
         {
             door.OpenDoor();
             dooropen.Play();
@@ -117,7 +119,7 @@ public class DoorTriggerButton : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            active1 = false;
+            stop = true;
             door.CloseDoor();
         }
     }
