@@ -29,9 +29,9 @@ public class HealthManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (healthAmount <= 0)
+        // När spelaren har 0 eller mindre liv: playermovement stängs av, sprite blir genomskinlig, grav sätts på och man kan trycka r för att starta om - Noel
+        if (healthAmount <= 0) 
         {
-            //Application.LoadLevel(Application.loadedLevel);
             GameObject.Find("Player").GetComponent<NewPlayerMovement>().enabled = false;
             sprite.color = new Color(0, 0, 0, 0);
             grave1.SetActive(true);
@@ -43,18 +43,6 @@ public class HealthManager : MonoBehaviour
                 PlayerRespawn();
             }
         }
-        
-        /*
-        if (Input.GetKeyDown(KeyCode.A)) //tar damage när man trycker ner den knappen (ska ändras till om man nuddar något)- alex
-        {
-            TakeDamage(20);
-        }
-
-        if (Input.GetKeyDown(KeyCode.D)) // healar när man trycker ner den knappen (ska ändras till om man äter/dricker något)- alex
-        {
-            Heal(5);
-        }
-        */
     }
 
     
@@ -65,16 +53,16 @@ public class HealthManager : MonoBehaviour
             TakeDamage(10);
             sprite.color = new Color(healthAmount / 100, 0, 0, 1);
         }
-        if (collision.gameObject.tag == "Food") // Få liv av macka + bli grön - Leon
+        if (collision.gameObject.tag == "Food") // Få liv av macka + bli grön + förstör macka - Leon
         {
-            Heal(10); // Få 10 + i liv när man går in/äter en macka, sen förstörs mackan, plus att man blir grön ett tag
+            Heal(10); 
             Destroy(collision.gameObject); 
             sprite.color = new Color(0.5f,1, 0.5f, 1);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Danger")
+        if (collision.gameObject.tag == "Danger") // ta skada av Danger + bli röd - Leon
         {
             TakeDamage(1);
             sprite.color = new Color(healthAmount / 100, 0,0, 1);
@@ -94,7 +82,7 @@ public class HealthManager : MonoBehaviour
 
         healthBar.fillAmount = healthAmount / 100f;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision) // Vid collision med tag Respawn så sätts respawnpoint där spelaren står - Noel
     {
         if (collision.gameObject.tag == "Respawn")
         {
@@ -111,7 +99,7 @@ public class HealthManager : MonoBehaviour
     {
         sprite.color = new Color(1, 1, 1, 1);
     }
-    private void PlayerRespawn()
+    private void PlayerRespawn() //Grav försvinner färgen återställs, livet återställs och spelaren teelporteras till respawnPoint - Noel
     {
         grave1.SetActive(false);
         grave2.SetActive(false);

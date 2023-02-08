@@ -31,7 +31,7 @@ public class DoorTriggerButton : MonoBehaviour
 
     private void Update()
     {
-        
+        //väljer antingen 3 triggers som är på/av eller väljer färg från sprite och när alla är aktiva så öppnas dörren -Noel
         
         if (chooseSprite1.color == new Color(0, 0, 0, 0)) 
         {
@@ -117,6 +117,7 @@ public class DoorTriggerButton : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Vid collision med spelaren stängs dörren
         if (collision.gameObject.tag == "Player")
         {
             stop = true;
