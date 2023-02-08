@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+//Gjord av Noel
 public class BossLogic : MonoBehaviour
 {
     bool start = false;
@@ -31,19 +32,19 @@ public class BossLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (start == true) //när start sant, sätts timer som startar om efter ca 2 sek - Noel
+        if (start == true) //när start sant, sätts timer som startar om efter ca 2 sek
         {
             timer += 1 * Time.deltaTime;
             if (timer >= 2)
             {
-                timer = 0; // varje 2sek används funktionen RandomizeATK och death-timern ökar - Noel
+                timer = 0; // varje 2sek används funktionen RandomizeATK och death-timern ökar
                 RandomizeATK();
                 deathTimer += 1;
-                if (deathTimer == 25) // när deathtimern når 25 så skapas en låda lite framför location objekted (över bossen) - Noel
+                if (deathTimer == 25) // när deathtimern når 25 så skapas en låda över bossen
                 {
                     Instantiate(box, location.transform.position + new Vector3(3.5f, 0, 0), transform.rotation);
                 }
-                else if (deathTimer == 26) // när deathtimern når 26 startar timers om och avslutas, start är false alltså slutar bossen göra nånting och musik stoppas - Noel
+                else if (deathTimer == 26) // när deathtimern når 26 startar timers om och avslutas, start är false alltså slutar bossen göra nånting och musik stoppas
                 {
                     timer = 0;
                     deathTimer = 0;
@@ -55,10 +56,10 @@ public class BossLogic : MonoBehaviour
          
         }
 
-        deathCheck = GameObject.Find("Player").GetComponent<SpriteRenderer>(); // Deathcheck kollar när spelaren är transparant - Noel
+        deathCheck = GameObject.Find("Player").GetComponent<SpriteRenderer>(); // Deathcheck kollar när spelaren är transparant
         if (deathCheck.color == new Color(0, 0, 0, 0))
         {
-            // timers återställs, bossens slutar göra nånting, musiken slutar och bosstriggerns collider sätts på så att bossen kan startas om - Noel
+            // timers återställs, bossens slutar göra nånting, musiken slutar och bosstriggerns collider sätts på så att bossen kan startas om
             timer = 0; 
             deathTimer = 0;
             start = false;
@@ -67,7 +68,7 @@ public class BossLogic : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision) // när spelaren går genom boss triggern: stängs trigger collidern av, bossen startas, musiken startas - Noel
+    private void OnTriggerEnter2D(Collider2D collision) // när spelaren går genom boss triggern: stängs trigger collidern av, bossen startas, musiken startas
     {
         if (collision.gameObject.tag == "Player")
         {

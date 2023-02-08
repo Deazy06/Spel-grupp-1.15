@@ -69,7 +69,7 @@ public class HealthManager : MonoBehaviour
         {
             Heal(10); // Få 10 + i liv när man går in/äter en macka, sen förstörs mackan, plus att man blir grön ett tag
             Destroy(collision.gameObject); 
-            sprite.color = new Color(0,healthAmount / 100, 0, 1);
+            sprite.color = new Color(0.5f,1, 0.5f, 1);
         }
     }
     private void OnTriggerStay2D(Collider2D collision)
