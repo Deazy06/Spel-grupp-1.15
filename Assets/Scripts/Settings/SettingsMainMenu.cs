@@ -21,10 +21,10 @@ public class SettingsMainMenu : MonoBehaviour
     public void SettingsPressed()
     {
         targetObject.GetComponent<RectTransform>().localPosition = Vector3.zero;
-
+        animation.SetTrigger("SettingsFadeIn");
     }
 
-    public void SettingsBack()
+    public void SettingsBack(MenuManager menuManager)
     {
         StartCoroutine(waiter());
     }
@@ -32,7 +32,7 @@ public class SettingsMainMenu : MonoBehaviour
 
     IEnumerator waiter()
     {
-
+        animation.SetTrigger("SettingsFadeOut");
         yield return new WaitForSeconds(1.3f);
         targetObject.GetComponent<RectTransform>().localPosition = targetPosition;
 

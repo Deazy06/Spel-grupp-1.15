@@ -19,22 +19,28 @@ public class MenuManager : MonoBehaviour // Diyor
 
     }
 
-    public void TurnOffUI() // Credit
+    public void TurnOffUI() // Credits
     {
         StartCoroutine(waiter2());
         FindObjectOfType<Credits>().CreditFadeIn(this);
     }
-    public void TurnOnUI() // Credit
+    public void TurnOnUI() // Credits close = On MainMenuUI
     {
-        StartCoroutine(waiter3());
         FindObjectOfType<Credits>().CreditFadeOut(this);
         FindObjectOfType<MainMenu>().FadeIn(this);
     }
+    public void TurnOnUISettings() // Credits close = On MainMenuUI
+    {
+        FindObjectOfType<SettingsMainMenu>().SettingsBack(this);
+        FindObjectOfType<MainMenu>().FadeIn(this);
+    }
 
+    /*
     public void OpenOptions()
     {
         SceneManager.LoadScene("Menu");
     }
+    */
 
     public void QuitGame()
     {

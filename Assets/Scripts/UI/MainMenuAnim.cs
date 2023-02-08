@@ -11,7 +11,14 @@ public class MainMenuAnim : MonoBehaviour // Diyor Animations för maainMenu
         animation.SetTrigger("MainFadeIn");
 
     }
-
+    public void SettingsPressed()
+    {
+        animation.SetTrigger("MainFadeOut");
+    }
+    public void SettingsPressedSettings()
+    {
+        animation.SetTrigger("MainFadeIn");
+    }
     public void CreditPressed()
     {
         animation.SetTrigger("MainFadeOut");
