@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class FullSceneToggle : MonoBehaviour
 {
-    public void Fullscene(bool is_fullscene)
+    public void Fullscene()
     {
-        Screen.fullScreen = is_fullscene;
+        Screen.fullScreen = !Screen.fullScreen;
+        Screen.fullScreenMode = FullScreenMode.FullScreenWindow;
 
-        Debug.Log("fullscreen is " + is_fullscene);
+        Debug.Log("fullscreen is " + Screen.fullScreen);
     }
 }
