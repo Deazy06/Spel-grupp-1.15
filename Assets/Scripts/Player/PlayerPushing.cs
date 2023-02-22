@@ -18,7 +18,7 @@ public class PlayerPushing : MonoBehaviour
         animation = GetComponent<Animator>();
     }
 
-    //Allt nedanför förutom animation är Alexandras kod förutom animationen
+    //Allt nedanför är Alexandras kod förutom animationen
     void Update()
     {
         Physics2D.queriesStartInColliders = false;
