@@ -10,13 +10,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1926764198529771087}
   - component: {fileID: 6229298085299002286}
-  - component: {fileID: 6229298085299002289}
   - component: {fileID: 6229298085299002288}
   - component: {fileID: 6229298085299002291}
   - component: {fileID: 6229298085299002290}
   - component: {fileID: 6229298085299002293}
   - component: {fileID: 6229298085299002292}
   - component: {fileID: 6229298085299002284}
+  - component: {fileID: 3827026230266673135}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -93,23 +93,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6229298085299002289
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1533627671226009698}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e702cfd19cb16c945a2a3969db26db90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb: {fileID: 6229298085299002288}
-  groundCheck: {fileID: 6229298086039607993}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
 --- !u!50 &6229298085299002288
 Rigidbody2D:
   serializedVersion: 4
@@ -203,8 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 0}
   healthAmount: 100
-  grave1: {fileID: 0}
-  grave2: {fileID: 0}
+  grave: {fileID: 0}
 --- !u!114 &6229298085299002284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,6 +205,23 @@ MonoBehaviour:
     m_Bits: 2147483647
   isPushing: 0
   target: {fileID: 1926764198529771087}
+--- !u!114 &3827026230266673135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533627671226009698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e702cfd19cb16c945a2a3969db26db90, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 6229298085299002288}
+  groundCheck: {fileID: 6229298086039607993}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1 &6229298084533522878
 GameObject:
   m_ObjectHideFlags: 0

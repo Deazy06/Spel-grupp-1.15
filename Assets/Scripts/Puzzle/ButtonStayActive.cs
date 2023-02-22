@@ -9,7 +9,7 @@ public class ButtonStayActive : MonoBehaviour
     
     // Update is called once per frame
     void Update()
-    {
+    { //knappen lyser när den är aktiv, annars inte -Noel
         if (gameObject.tag == "Active")
         {
             sprite.color = Color.white;
@@ -20,17 +20,10 @@ public class ButtonStayActive : MonoBehaviour
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
-    {
-
+    { // Vid kollision med spelaren så blir knappen aktiv -Noel
         if (collision.gameObject.CompareTag("Player"))
         {
             gameObject.tag = "Active";
-            sprite.color = Color.white;
         }
-        
-        
-       
-
-
     }
 }

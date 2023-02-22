@@ -17,10 +17,10 @@ public class DangerBox : MonoBehaviour
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
-    {
+    { //Vid kollision ställs tagen till Box -Noel
         if (collision.gameObject.tag == "NoDanger")
         {
-            gameObject.tag = "NoDanger";
+            gameObject.tag = "Box";
         }
     }
 }
