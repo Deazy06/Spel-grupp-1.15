@@ -11,8 +11,7 @@ public class HealthManager : MonoBehaviour
     public float healthAmount = 100f;
     SpriteRenderer sprite;
     Vector3 respawnPoint;
-    public GameObject grave1;
-    public GameObject grave2;
+    public GameObject grave;
 
     //[SerializeField] private AudioSource deathsound;
 
@@ -34,8 +33,7 @@ public class HealthManager : MonoBehaviour
         {
             GameObject.Find("Player").GetComponent<NewPlayerMovement>().enabled = false;
             sprite.color = new Color(0, 0, 0, 0);
-            grave1.SetActive(true);
-            grave2.SetActive(true);
+            grave.SetActive(true);
             //deathsound.Play();
           
             if (Input.GetKeyDown(KeyCode.R))
@@ -55,7 +53,7 @@ public class HealthManager : MonoBehaviour
         }
         if (collision.gameObject.tag == "Food") // Få liv av macka + bli grön + förstör macka - Leon
         {
-            Heal(10); 
+            Heal(20); 
             Destroy(collision.gameObject); 
             sprite.color = new Color(0.5f,1, 0.5f, 1);
         }
@@ -101,8 +99,7 @@ public class HealthManager : MonoBehaviour
     }
     private void PlayerRespawn() //Grav försvinner färgen återställs, livet återställs och spelaren teelporteras till respawnPoint - Noel
     {
-        grave1.SetActive(false);
-        grave2.SetActive(false);
+        grave.SetActive(false);
         sprite.color = new Color(1, 1, 1, 1);
         healthAmount = 100f;
         Heal(100);
