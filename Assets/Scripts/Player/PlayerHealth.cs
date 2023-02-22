@@ -23,6 +23,8 @@ public class PlayerHealth : MonoBehaviour
         
     }
 
+    //Jag skrev grunden till koden som nu skrivits om -Alex
+
     // Update is called once per frame
     void Update()
     {
