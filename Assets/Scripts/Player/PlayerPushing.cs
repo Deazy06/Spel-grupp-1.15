@@ -38,6 +38,7 @@ public class PlayerPushing : MonoBehaviour
             box.GetComponent<FixedJoint2D>().enabled = false;
             box.GetComponent<BoxPulling>().beingPushed = false;
         }
+        // Animation delen nedan var gjord av Diyor. Allting under gör så att man inte spelar upp t.ex en pull animation när man puttar én box. 
         if (isPushing && Input.GetKeyDown(KeyCode.A) && target.localScale.x == 5.57f)
         {
             animation.SetBool("Pull", true);

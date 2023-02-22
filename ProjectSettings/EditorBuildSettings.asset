@@ -8,19 +8,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/DiyorMenu.unity
     guid: f3e5a3516254e2348b85f9ffd81069d7
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/NoelMain.unity
     guid: ef53a48b62109d4479532e6950445f77
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Settings.unity
     guid: cd2f953cf6e75554b9109367f14e83d9
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Diyor.unity
     guid: 2e2ddec650927cc40afee98eb4a5a1c8
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Door.unity
     guid: 23cd823d9942bb648a7735f821d21d36
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Cutscene.unity
     guid: dbc48bdea78a64b48810440134cbc9da
   m_configObjects: {}
