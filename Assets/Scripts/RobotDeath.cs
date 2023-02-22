@@ -8,6 +8,8 @@ public class RobotDeath : MonoBehaviour
     bool start = false;
     float timer;
     // Start is called before the first frame update
+
+    //Jag gjorde grunden till koden som nu skrivits om -Alex
     void Start()
     {
         collid = GetComponent<Collider2D>();
